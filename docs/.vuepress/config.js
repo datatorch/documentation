@@ -25,7 +25,7 @@ module.exports = context => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/guide/': sidebars.guide()
+          '/': sidebars.guide()
         }
       }
     }

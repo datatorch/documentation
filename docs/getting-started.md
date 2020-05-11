@@ -18,7 +18,7 @@ can expand the sidebar to view the title of each tab.
 
 ### Sharing your Project
 
-You can add users to your project using the Memebers tab.
+You can add users to your project using the Memebers tab. Type
 
 Default classes are created for each of your projects. If you would like to learn
 more about creating custom roles, checkout [User Roles](/guide/projects.html#user-roles).

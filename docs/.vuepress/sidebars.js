@@ -1,7 +1,7 @@
 module.exports = {
   guide: () => [
     {
-      title: 'Guide',
+      title: 'Home',
       children: ['', 'getting-started', 'projects', 'annotator', 'exports']
     },
     {
@@ -14,7 +14,7 @@ module.exports = {
         {
           title: 'Deployment',
           collapsable: true,
-          children: []
+          children: ['helm-charts', 'docker-compose']
         }
       ]
     }
