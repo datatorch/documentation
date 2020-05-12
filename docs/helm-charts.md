@@ -1,9 +1,9 @@
 # Helm Charts
 
-DataTorch uses Helm 3 when deploying to a kubernetes cluster. This provided a simple
-package manager to handle all of the required services and pods along with easier
-configuration and updates. For instructions on installing Helm, checkout the
-[official documentation](https://helm.sh/docs/intro/install/).
+DataTorch uses Helm 3 when deploying to a kubernetes cluster. This provided a
+simple package manager to handle all of the required services and pods along
+with easier configuration and updates. For instructions on installing Helm,
+checkout the [official documentation](https://helm.sh/docs/intro/install/).
 
 If you would like more information about the DataTorch Helm Charts checkout the
 [official charts repository](https://github.com/datatorch/helm-charts).
@@ -14,19 +14,18 @@ If you would like more information about the DataTorch Helm Charts checkout the
    ```bash
    helm repo add datatorch https://charts.datatorch.io
    ```
-2. Use `scripts/kub-redcred.sh` to create the secret required to pull the docker images.
-   You must have the `gcrpull.json` located in the same directory.
-3. Create a copy of the `datatorch/values.yaml` and update the FQDN, database connection
-   and licencing information.
+2. Use `scripts/kub-redcred.sh` to create the secret required to pull the docker
+   images. You must have the `gcrpull.json` located in the same directory.
+3. Create a copy of the `datatorch/values.yaml` and update the FQDN, database
+   connection and licencing information.
 4. Deploy the instance using `helm install`
    ```bash
    helm install my-release datatorch/datatorch -f values.yaml
    ```
    This will create a release with the name `my-release`.
 
-::: warning
-It not recommend to run a PostgreSQL database in your kubernetes cluster
-as the additional levels of abstract may be difficult for debugging.
+::: warning It not recommend to run a PostgreSQL database in your kubernetes
+cluster as the additional levels of abstract may be difficult for debugging.
 :::
 
 ## Uninstall
@@ -37,16 +36,19 @@ To uninstall/delete the `my-release` deployment:
 helm delete my-release
 ```
 
-The command will remove all kubernetes components associated with the chart and deletes the
-release. Please note does this not include PVC or PV, those will need to remove manually.
+The command will remove all kubernetes components associated with the chart and
+deletes the release. Please note does this not include PVC or PV, those will
+need to remove manually.
 
 ## SSL with NGINX and Cert-Manager
 
-By default the DataTorch helm chart ships with the NGINX ingress. If you have disabled this
-chart, you many need to modify these steps to point towards your ingress.
+By default the DataTorch helm chart ships with the NGINX ingress. If you have
+disabled this chart, you many need to modify these steps to point towards your
+ingress.
 
-1. Clone the [official charts repository](https://github.com/datatorch/helm-charts)
-   to access the scripts required.
+1. Clone the [official charts
+   repository](https://github.com/datatorch/helm-charts) to access the scripts
+   required.
 2. Install cert-manager
    ```bash
    sh ssl/install-certmanager.sh
@@ -56,8 +58,9 @@ chart, you many need to modify these steps to point towards your ingress.
    kubectl apply -f ssl/issuer-prod.yaml
    kubectl apply -f ssl/issuer-staging.yaml
    ```
-4. Add the annotations and TLS to the ingress found in the `values.yaml`. Replace `HOST_DOMAIN`
-   with the domain where the instance will be accessible (e.g annotator.example.com).
+4. Add the annotations and TLS to the ingress found in the `values.yaml`.
+   Replace `HOST_DOMAIN` with the domain where the instance will be accessible
+   (e.g annotator.example.com).
    ```yaml
    ingress:
      host: HOST_DOMAIN
@@ -85,16 +88,18 @@ az aks create \
 
 You can checkout the official documentation for more options.
 
-Once your instance is created you can connection thought your `kubectl` client and deploy using the
-Helm instructions above.
+Once your instance is created you can connection thought your `kubectl` client
+and deploy using the Helm instructions above.
 
 ### Connection Pooling
 
-If you are using a managed postgres instance provided by azure it is recommend to setup the
-[microsoft pgbouncer](https://hub.docker.com/_/microsoft-azure-oss-db-tools-pgbouncer-sidecar)
+If you are using a managed postgres instance provided by azure it is recommend
+to setup the [microsoft
+pgbouncer](https://hub.docker.com/_/microsoft-azure-oss-db-tools-pgbouncer-sidecar)
 to significantly reduce connection delay.
 
-You can add the volumes and containers suggested to the `backend` section of the `values.yaml`.
+You can add the volumes and containers suggested to the `backend` section of the
+`values.yaml`.
 
 ::: details Show values.yaml example
 
