@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CenteredImage :src="src" :width="width" />
+    <CenteredImage :src="src" :width="width" :max-width="maxWidth" />
     <div class="caption-text">Figure {{ num }}: {{ caption }}</div>
   </div>
 </template>
@@ -12,6 +12,7 @@ export default {
   props: {
     src: { type: String, required: true },
     width: { type: String, default: '50%' },
+    maxWidth: { type: String, default: null },
     caption: { type: String, default: 'No caption' }
   },
   data() {
@@ -19,7 +20,7 @@ export default {
   },
   computed: {
     figures() {
-      return this.$parent.$children.filter(v => v.$options.name)
+      return this.$parent.$children.filter(v => v.$options.name === 'Figure')
     },
     num() {
       return this.figures.findIndex(v => this.id === v.id) + 1
@@ -33,6 +34,7 @@ export default {
 
 <style scoped>
 .caption-text {
+  color: #6c757d;
   margin-top: 1.5em;
   text-align: center;
   font-size: 0.85em;
