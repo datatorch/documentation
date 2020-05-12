@@ -1,3 +1,10 @@
+---
+id: helm-charts
+title: Helm Charts
+---
+
+<CenteredImage src="/helm.png" width="25%" />
+
 # Helm Charts
 
 DataTorch uses Helm 3 when deploying to a kubernetes cluster. This provided a

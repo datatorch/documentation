@@ -1,10 +1,9 @@
 ---
 id: ''
 title: Introduction
-sidebar_label: Introduction
 ---
 
-<IntroGraphic />
+<CenteredImage src="intro.png" />
 
 # Introduction
 
@@ -32,4 +31,4 @@ the [features page](https://datatorch.io/features) for more details.
 
 ## Contact Us
 
-Send any question to [support@datatorch.io]().
+Send any question to [support@datatorch.io](mailto:support@datatorch.io).

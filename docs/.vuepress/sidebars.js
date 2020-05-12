@@ -2,7 +2,22 @@ module.exports = {
   guide: () => [
     {
       title: 'Guide',
-      children: ['', 'getting-started', 'projects', 'annotator', 'exports']
+      children: [
+        '',
+        'getting-started',
+        'projects',
+        {
+          title: 'Annotator',
+          collapsable: true,
+          children: [
+            'annotator-concepts',
+            'annotator-images',
+            'annotator-text',
+            'annotator-audio'
+          ]
+        },
+        'exports'
+      ]
     },
     {
       title: 'Advanced',
