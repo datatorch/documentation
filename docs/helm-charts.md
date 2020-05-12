@@ -24,8 +24,10 @@ If you would like more information about the DataTorch Helm Charts checkout the
    ```
    This will create a release with the name `my-release`.
 
-::: warning It not recommend to run a PostgreSQL database in your kubernetes
-cluster as the additional levels of abstract may be difficult for debugging.
+::: warning
+It not recommend to run a PostgreSQL database in your kubernetes
+cluster as the additional levels of abstract may be difficult for debugging
+performance metrics.
 :::
 
 ## Uninstall
@@ -37,8 +39,13 @@ helm delete my-release
 ```
 
 The command will remove all kubernetes components associated with the chart and
-deletes the release. Please note does this not include PVC or PV, those will
-need to remove manually.
+deletes the release.
+
+::: warning
+Helm does not remove PVC or PV from you cluster when running the uninstall
+command. This is to protect your data from accidental deletion. These will
+need to removed manually.
+:::
 
 ## SSL with NGINX and Cert-Manager
 
@@ -77,19 +84,37 @@ ingress.
 
 ## Azure AKS
 
+If you have not done so already login into Azure CI:
+
+```bash
+az login
+```
+
+Create an Azure AKS using Azure CI:
+
 ```bash
 az extension add --name aks-preview
 az aks create \
-   --name myAnnotator \
-   --resource-group myAnnotatorAKS \
-   --resource-group myAnnotator \
+   --name datatorch-cluster \
+   --resource-group datatorch-resource-group \
+   --node-resource-group datatorch-aks \
    --generate-ssh-keys
 ```
 
-You can checkout the official documentation for more options.
+Checkout the AKS [create
+command](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az-aks-create)
+for more options.
 
 Once your instance is created you can connection thought your `kubectl` client
 and deploy using the Helm instructions above.
+
+Connect your `kubectl` client using the following command:
+
+```bash
+az aks get-credentials \
+  --resource-group datatorch-resource-group \
+  --name datatorch-cluster
+```
 
 ### Connection Pooling
 
