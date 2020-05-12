@@ -7,7 +7,7 @@ title: Helm Charts
 
 # Helm Charts
 
-DataTorch uses Helm 3 when deploying to a kubernetes cluster. This provided a
+DataTorch uses Helm 3 when deploying to a Kubernetes cluster. This provided a
 simple package manager to handle all of the required services and pods along
 with easier configuration and updates. For instructions on installing Helm,
 checkout the [official documentation](https://helm.sh/docs/intro/install/).
@@ -25,14 +25,14 @@ If you would like more information about the DataTorch Helm Charts checkout the
    images. You must have the `gcrpull.json` located in the same directory.
 3. Create a copy of the `datatorch/values.yaml` and update the FQDN, database
    connection and licencing information.
-4. Deploy the instance using `helm install`
+4. Deploy an instance using `helm install`
    ```bash
    helm install my-release datatorch/datatorch -f values.yaml
    ```
    This will create a release with the name `my-release`.
 
 ::: warning
-It not recommend to run a PostgreSQL database in your kubernetes
+It not recommend to run a PostgreSQL database in your Kubernetes
 cluster as the additional levels of abstract may be difficult for debugging
 performance metrics.
 :::
@@ -45,7 +45,7 @@ To uninstall/delete the `my-release` deployment:
 helm delete my-release
 ```
 
-The command will remove all kubernetes components associated with the chart and
+The command will remove all Kubernetes components associated with the chart and
 deletes the release.
 
 ::: warning
@@ -115,7 +115,7 @@ for more options.
 Once your instance is created you can connection thought your `kubectl` client
 and deploy using the Helm instructions above.
 
-Connect your `kubectl` client using the following command:
+Connect to your `kubectl` client using the following command:
 
 ```bash
 az aks get-credentials \
