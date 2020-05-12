@@ -1,11 +1,11 @@
 # Helm Charts
 
 DataTorch uses Helm 3 when deploying to a kubernetes cluster. This provided a simple
-package manager to handle all of the requires services and pods along with easier
-configuration and updates.For instructions on install Helm, checkout the
+package manager to handle all of the required services and pods along with easier
+configuration and updates. For instructions on installing Helm, checkout the
 [official documentation](https://helm.sh/docs/intro/install/).
 
-If you would like more information about the Helm Charts checkout the
+If you would like more information about the DataTorch Helm Charts checkout the
 [official charts repository](https://github.com/datatorch/helm-charts).
 
 ## Installing Chart
@@ -14,7 +14,8 @@ If you would like more information about the Helm Charts checkout the
    ```bash
    helm repo add datatorch https://charts.datatorch.io
    ```
-2. Use `scripts/kub-redcred.sh` to create the secret require for pull the docker images.
+2. Use `scripts/kub-redcred.sh` to create the secret required to pull the docker images.
+   You must have the `gcrpull.json` located in the same directory.
 3. Create a copy of the `datatorch/values.yaml` and update the FQDN, database connection
    and licencing information.
 4. Deploy the instance using `helm install`
@@ -84,12 +85,13 @@ az aks create \
 
 You can checkout the official documentation for more options.
 
-Once your instance is created you can connection thought your `kubectl` client and deploy using the Helm instructions above.
+Once your instance is created you can connection thought your `kubectl` client and deploy using the
+Helm instructions above.
 
-### Using pgBouncer
+### Connection Pooling
 
-If you are using a using a managed postgres instance it is recommend to setup
-[pgbouncer](https://hub.docker.com/_/microsoft-azure-oss-db-tools-pgbouncer-sidecar)
+If you are using a managed postgres instance provided by azure it is recommend to setup the
+[microsoft pgbouncer](https://hub.docker.com/_/microsoft-azure-oss-db-tools-pgbouncer-sidecar)
 to significantly reduce connection delay.
 
 You can add the volumes and containers suggested to the `backend` section of the `values.yaml`.
