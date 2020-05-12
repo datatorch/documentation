@@ -6,14 +6,15 @@
     "build": "vuepress build docs --temp .temp",
     "dev": "vuepress dev docs --temp .temp",
     "lint": "eslint --ext .js,.vue docs/.vuepress",
-    "serve": "vuepress serve",
-    "view-info": "vuepress view-info docs --temp .temp"
+    "serve": "vuepress serve"
   },
   "eslintConfig": {
     "extends": "vuepress",
     "root": true
   },
   "dependencies": {
+    "@vuepress/plugin-google-analytics": "^1.5.0",
+    "dayjs": "^1.8.26",
     "textlint": "^11.6.3",
     "vuepress": "^1.5.0"
   }

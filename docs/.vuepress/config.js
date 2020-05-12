@@ -1,4 +1,5 @@
 const sidebars = require('./sidebars')
+const plugins = require('./plugins')
 
 module.exports = context => ({
   title: 'DataTorch Documentation',
@@ -11,6 +12,7 @@ module.exports = context => ({
     }
   },
   themeConfig: {
+    logo: '/favicon-40x40.png',
     repo: 'datatorch/documentation',
     editLinks: true,
     smoothScroll: true,
@@ -29,5 +31,6 @@ module.exports = context => ({
         }
       }
     }
-  }
+  },
+  plugins: plugins()
 })

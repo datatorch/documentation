@@ -1,7 +1,7 @@
 module.exports = {
   guide: () => [
     {
-      title: 'Home',
+      title: 'Guide',
       children: ['', 'getting-started', 'projects', 'annotator', 'exports']
     },
     {

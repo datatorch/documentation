@@ -1,6 +1,10 @@
 ---
-sidebar: true
+id: ''
+title: Introduction
+sidebar_label: Introduction
 ---
+
+<IntroGraphic />
 
 # Introduction
 

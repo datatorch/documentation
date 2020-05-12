@@ -32,3 +32,14 @@ more about creating custom roles, checkout [User Roles](/guide/projects.html#use
 Exports allow you download your annotations in order to begin training your
 machine learning models. DataTorch allows you to specify exactly which properties
 of your dataset you would like to export.
+
+## Discovering projects
+
+If there's a particular topic that interests you, the visit [Topics](https://datatorch.io/topics)
+webpage. For example, if you are interested in datasets related to cars, you can find
+relevant projects by going to [https://datatorch.io/topics/cars](https://datatorch.io/topics/cars).
+You can also search for projects that match a topic you're interested in by using the search
+form found in the navigation bar.
+
+If you've been active on DataTorch, you can find personalized recommendations for projects and
+good first issues based on your past contributions, stars, and other activities in Explore.
