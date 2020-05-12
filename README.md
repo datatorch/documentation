@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="/datatorch/documentation/blob/master/docs/.vuepress/public/intro.png?raw=true" width="360" />
+    <img src="https://raw.githubusercontent.com/datatorch/documentation/master/docs/.vuepress/public/intro.png" width="360" />
 </p>
 
 # DataTorch Documentation
