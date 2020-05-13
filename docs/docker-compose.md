@@ -10,7 +10,8 @@ title: Docker Compose
 DataTorch also support docker-compose setup as an easier alterative to
 kubernetes.
 
-::: warning Do not use docker-compose for production if you need to scale to
+::: warning
+Do not use docker-compose for production if you need to scale to
 many users.
 :::
 
