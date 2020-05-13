@@ -3,7 +3,7 @@ id: ''
 title: Introduction
 ---
 
-<CenteredImage src="intro.png" />
+<CenteredImage src="circle.png" />
 
 # Introduction
 

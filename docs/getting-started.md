@@ -1,3 +1,10 @@
+---
+id: intro
+title: Getting Started
+---
+
+<CenteredImage src="intro.png" width="42%" />
+
 # Getting Started
 
 ## Signing up
