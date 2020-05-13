@@ -1,3 +1,10 @@
+---
+id: docker-compose
+title: Docker Compose
+---
+
+<CenteredImage src="octopus.png" width="42%" />
+
 # Docker Compose
 
 DataTorch also support docker-compose setup as an easier alterative to
