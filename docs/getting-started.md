@@ -3,7 +3,7 @@ id: intro
 title: Getting Started
 ---
 
-<CenteredImage src="intro.png" width="42%" />
+<CenteredImage src="rocket.png" width="40%" />
 
 # Getting Started
 
