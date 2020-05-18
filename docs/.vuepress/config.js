@@ -18,6 +18,10 @@ module.exports = context => ({
     smoothScroll: true,
     docsDir: 'docs',
     sidebarDepth: 2,
+    algolia: {
+      apiKey: '50841ae57ba1849ebda7fd9772332dc7',
+      indexName: 'datatorch'
+    },
     locales: {
       '/': {
         label: 'English',
