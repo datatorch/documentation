@@ -7,6 +7,9 @@ title: Introduction
 
 # Introduction
 
+Welcome to the official DataTorch documentation webpage. If you do not find
+answers to questions you have, checkout the github repository.
+
 ## What is DataTorch?
 
 DataTorch is a scalable, machine learning data tool designed to efficiently

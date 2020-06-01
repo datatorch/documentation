@@ -7,6 +7,9 @@ title: Getting Started
 
 # Getting Started
 
+In this section we will quickly get you up and annotating data. We will look at
+creating projects, uploading data, annotating data and finally exporting data.
+
 ## Signing up
 
 Go the [sign up page](https://datatorch.io/auth?tab=register) and create an
