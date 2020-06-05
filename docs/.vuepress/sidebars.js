@@ -22,8 +22,8 @@ module.exports = {
           children: [
             'python/',
             'python/cli',
-            'python/environment-variables'
-            'python/examples',
+            'python/environment-variables',
+            'python/examples'
           ]
         },
         'exports'
