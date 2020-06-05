@@ -10,18 +10,24 @@ module.exports = {
           title: 'Annotator',
           collapsable: true,
           children: [
-            'annotator-concepts',
-            'annotator-images',
-            'annotator-text',
-            'annotator-audio'
+            'annotator/concepts',
+            'annotator/images',
+            'annotator/text',
+            'annotator/audio'
+          ]
+        },
+        {
+          title: 'Python',
+          collapsable: true,
+          children: [
+            'python/',
+            'python/cli',
+            'python/environment-variables'
+            'python/examples',
           ]
         },
         'exports'
       ]
-    },
-    {
-      title: 'Advanced',
-      children: []
     },
     {
       title: 'Enterprise',
