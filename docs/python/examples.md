@@ -81,14 +81,31 @@ anno2 = anno.copy()
 Objects will only be inserted once they have been attached to an object that
 already exists on the server.
 
-## Advance Filtering
+## Advanced Filtering
 
-In this example we will look at using `Where` filtering object to play complex
+In this example we will look at using `Where` filtering object to create complex
 queries for retrieving files.
 
 Parameters passed into the `Where` constructor start with an property followed
-by an operator. Information about the available operators and properties for each
-class can be found by viewing the GraphQL documentation.
+by two underscores and then an operator.
+
+|   Operator    |          Types          | Description                                                           |
+| :-----------: | :---------------------: | --------------------------------------------------------------------- |
+|    `equal`    | boolean, number, string | Equals. If no operator is specified this is selected by default. (==) |
+|  `not_equal`  | boolean, number, string | Not Equals (!=)                                                       |
+|     `gt`      |     number, string      | Greater than (>)                                                      |
+|     `gte`     |     number, string      | Greater than or Equal (>=)                                            |
+|     `lt`      |     number, string      | Less than (<)                                                         |
+|     `lte`     |     number, string      | Less than or Equal (<=)                                               |
+|     `in`      |     number, string      | In an array                                                           |
+| `starts_with` |         string          | Starts with (string only)                                             |
+|  `ends_with`  |         string          | Ends with (string only)                                               |
+|  `contains`   |         string          | Contains (string only)                                                |
+|    `like`     |         string          | SQL Like string (string only)                                         |
+
+Information about the available
+properties for each entity can be found by viewing the GraphQL documentation
+(note: variables are in snake case).
 
 The where clause in the example below will return:
 
