@@ -89,19 +89,19 @@ queries for retrieving files.
 Parameters passed into the `Where` constructor start with an property followed
 by two underscores and then an operator.
 
-|   Operator    |          Types          | Description                                                           |
-| :-----------: | :---------------------: | --------------------------------------------------------------------- |
-|    `equal`    | boolean, number, string | Equals. If no operator is specified this is selected by default. (==) |
-|  `not_equal`  | boolean, number, string | Not Equals (!=)                                                       |
-|     `gt`      |     number, string      | Greater than (>)                                                      |
-|     `gte`     |     number, string      | Greater than or Equal (>=)                                            |
-|     `lt`      |     number, string      | Less than (<)                                                         |
-|     `lte`     |     number, string      | Less than or Equal (<=)                                               |
-|     `in`      |     number, string      | In an array                                                           |
-| `starts_with` |         string          | Starts with (string only)                                             |
-|  `ends_with`  |         string          | Ends with (string only)                                               |
-|  `contains`   |         string          | Contains (string only)                                                |
-|    `like`     |         string          | SQL Like string (string only)                                         |
+|   Operator    |          Types          | Description                    |
+| :-----------: | :---------------------: | ------------------------------ |
+|    `equal`    | boolean, number, string | Equals (=) [default operation] |
+|  `not_equal`  | boolean, number, string | Not Equals (!=)                |
+|     `gt`      |     number, string      | Greater than (>)               |
+|     `gte`     |     number, string      | Greater than or Equal (>=)     |
+|     `lt`      |     number, string      | Less than (<)                  |
+|     `lte`     |     number, string      | Less than or Equal (<=)        |
+|     `in`      |  List[number, string]   | In an array                    |
+| `starts_with` |         string          | Starts with                    |
+|  `ends_with`  |         string          | Ends with                      |
+|  `contains`   |         string          | Contains                       |
+|    `like`     |         string          | SQL Like string                |
 
 Information about the available
 properties for each entity can be found by viewing the GraphQL documentation
