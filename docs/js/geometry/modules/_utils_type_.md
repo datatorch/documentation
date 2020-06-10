@@ -6,7 +6,7 @@
 
 ▸ **isNumber**(`v`: any): *boolean*
 
-*Defined in [utils/type.ts:1](https://github.com/datatorch/geometry.js/blob/dcd046a/src/utils/type.ts#L1)*
+*Defined in [utils/type.ts:1](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/utils/type.ts#L1)*
 
 **Parameters:**
 
@@ -22,7 +22,7 @@ ___
 
 ▸ **isObject**(`v`: any): *boolean*
 
-*Defined in [utils/type.ts:4](https://github.com/datatorch/geometry.js/blob/dcd046a/src/utils/type.ts#L4)*
+*Defined in [utils/type.ts:4](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/utils/type.ts#L4)*
 
 **Parameters:**
 
