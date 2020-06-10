@@ -24,8 +24,15 @@ jobs:
     needs: generate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: actions/download-artifact@master
         with:
           name: geometryjs-docs
-          path: docs
+          path: docs/js/geometry
+      - uses: EndBug/add-and-commit@v4
+        with:
+          author_email: ci@datatorch.io
+          author_name: DataTorch CI
+          message: 'updated geometry.js'
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
