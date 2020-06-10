@@ -1,0 +1,12 @@
+name: geometry.js docs
+on:
+  repository_dispatch:
+    types: [generate-docs]
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.client_payload.ref }}
+      - run: echo ${{ github.event.client_payload.sha }}
