@@ -1,3 +1,5 @@
+const geometryjs = require('./geometry')
+
 module.exports = {
   guide: () => [
     {
@@ -39,5 +41,6 @@ module.exports = {
         }
       ]
     }
-  ]
+  ],
+  geometryjs: () => [...geometryjs]
 }

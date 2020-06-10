@@ -1,10 +1,10 @@
-const sidebars = require('./sidebars')
+const sidebars = require('./sidebar')
 const plugins = require('./plugins')
 
 module.exports = context => ({
   title: 'DataTorch Documentation',
   locales: {
-    '/en/': {
+    '/': {
       lang: 'en-US',
       title: 'DataTorch Documentation',
       description:
@@ -31,6 +31,7 @@ module.exports = context => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
+          '/js/geometry/': sidebars.geometryjs(),
           '/': sidebars.guide()
         }
       }
