@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.client_payload.repository }}
+          repository: ${{ github.event.client_payload.repository }}
       - run: echo ${{ github.event.client_payload.sha }}
