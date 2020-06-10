@@ -1,5 +1,3 @@
-[@datatorch/geometry](README.md) › [Globals](globals.md)
-
 # @datatorch/geometry
 
 # geometry.js

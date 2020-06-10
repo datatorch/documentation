@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Modules",
+    "children": [
+      "modules/_index_",
+      "modules/_multi_polygon_",
+      "modules/_point_",
+      "classes/_point_.point",
+      "classes/_point_.point2d",
+      "modules/_polygon_",
+      "modules/_utils_type_"
+    ]
+  },
+  {
+    "title": "Classes",
+    "children": [
+      "classes/_point_.point",
+      "classes/_point_.point2d"
+    ]
+  }
+]
