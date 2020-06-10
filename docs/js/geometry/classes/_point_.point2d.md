@@ -15,7 +15,7 @@ also used to represent two dimensional vector objects.
 
 \+ **new Point2D**(): *[Point2D](_point_.point2d.md)*
 
-*Defined in [point.ts:30](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L30)*
+*Defined in [point.ts:30](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L30)*
 
 Creates an empty Point object.
 
@@ -30,7 +30,7 @@ console.log(point.x); // { x: 0, y: 0 }
 
 \+ **new Point2D**(`scalar`: number): *[Point2D](_point_.point2d.md)*
 
-*Defined in [point.ts:42](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L42)*
+*Defined in [point.ts:42](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L42)*
 
 Creates a Point object with a x and y value of scalar
 
@@ -50,7 +50,7 @@ Name | Type | Description |
 
 \+ **new Point2D**(`x`: number, `y`: number): *[Point2D](_point_.point2d.md)*
 
-*Defined in [point.ts:55](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L55)*
+*Defined in [point.ts:55](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L55)*
 
 Creates a Point object with the given x and y coordinates.
 
@@ -73,7 +73,7 @@ Name | Type | Description |
 
 \+ **new Point2D**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d)): *[Point2D](_point_.point2d.md)*
 
-*Defined in [point.ts:71](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L71)*
+*Defined in [point.ts:71](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L71)*
 
 Creates a Point object using the properties in the given object.
 
@@ -112,7 +112,7 @@ Name | Type | Description |
 
 • **x**: *number* = 0
 
-*Defined in [point.ts:25](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L25)*
+*Defined in [point.ts:25](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L25)*
 
 The x coordinate of the point
 
@@ -122,7 +122,7 @@ ___
 
 • **y**: *number* = 0
 
-*Defined in [point.ts:30](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L30)*
+*Defined in [point.ts:30](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L30)*
 
 The y coordinate of the point
 
@@ -132,7 +132,7 @@ The y coordinate of the point
 
 • **get angle**(): *number*
 
-*Defined in [point.ts:152](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L152)*
+*Defined in [point.ts:152](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L152)*
 
 The vector's angle in degrees, measured from the x-axis to the vector.
 
@@ -146,7 +146,7 @@ ___
 
 • **get angleRadians**(): *number*
 
-*Defined in [point.ts:143](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L143)*
+*Defined in [point.ts:143](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L143)*
 
 The vector's angle in radians, measured from the x-axis to the vector.
 
@@ -160,7 +160,7 @@ ___
 
 • **get length**(): *number*
 
-*Defined in [point.ts:162](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L162)*
+*Defined in [point.ts:162](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L162)*
 
 The length of the vector that is represented by this point's coordinates.
 Each point can be interpreted as a vector that points from the origin (`x =
@@ -171,7 +171,7 @@ location but keeps the vector's angle.
 
 • **set length**(`length`: number): *void*
 
-*Defined in [point.ts:166](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L166)*
+*Defined in [point.ts:166](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L166)*
 
 The length of the vector that is represented by this point's coordinates.
 Each point can be interpreted as a vector that points from the origin (`x =
@@ -192,7 +192,7 @@ ___
 
 • **get quadrant**(): *1 | 2 | 3 | 4*
 
-*Defined in [point.ts:210](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L210)*
+*Defined in [point.ts:210](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L210)*
 
 The quadrant of the {@link #angle} of the point.
 
@@ -216,7 +216,7 @@ console.log(point.quadrant); // 1
 
 ▸ **add**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d) | number): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:250](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L250)*
+*Defined in [point.ts:250](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L250)*
 
 Returns the addition of the supplied point to the point as a new point. The
 object itself is not modified!
@@ -245,7 +245,7 @@ ___
 
 ▸ **clone**(): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:191](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L191)*
+*Defined in [point.ts:191](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L191)*
 
 Returns a copy of the point.
 
@@ -269,7 +269,7 @@ ___
 
 ▸ **cross**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d) | number): *number*
 
-*Defined in [point.ts:320](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L320)*
+*Defined in [point.ts:320](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L320)*
 
 Returns the cross product of the point and another point.
 
@@ -289,7 +289,7 @@ ___
 
 ▸ **divide**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d) | number): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:298](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L298)*
+*Defined in [point.ts:298](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L298)*
 
 Returns the division of the supplied point to the point as a new point. The
 object itself is not modified!
@@ -318,7 +318,7 @@ ___
 
 ▸ **dot**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d) | number): *number*
 
-*Defined in [point.ts:309](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L309)*
+*Defined in [point.ts:309](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L309)*
 
 Returns the dot product of the point and another point.
 
@@ -338,7 +338,7 @@ ___
 
 ▸ **equals**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d)): *boolean*
 
-*Defined in [point.ts:355](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L355)*
+*Defined in [point.ts:355](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L355)*
 
 Checks whether the coordinates of the point are equal to that of the
 supplied point.
@@ -367,7 +367,7 @@ ___
 
 ▸ **getDistance**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d)): *[Point2D](_point_.point2d.md)*
 
-*Defined in [point.ts:228](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L228)*
+*Defined in [point.ts:228](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L228)*
 
 Returns the distance between the point and another point.
 
@@ -395,7 +395,7 @@ ___
 
 ▸ **isClose**(`point`: [Point2D](_point_.point2d.md), `tolerance`: number): *Boolean*
 
-*Defined in [point.ts:367](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L367)*
+*Defined in [point.ts:367](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L367)*
 
 Checks if the point is within a given distance of another point.
 
@@ -416,7 +416,7 @@ ___
 
 ▸ **modulo**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d) | number): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:278](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L278)*
+*Defined in [point.ts:278](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L278)*
 
 **Parameters:**
 
@@ -432,7 +432,7 @@ ___
 
 ▸ **multiply**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d) | number): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:273](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L273)*
+*Defined in [point.ts:273](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L273)*
 
 **Parameters:**
 
@@ -448,7 +448,7 @@ ___
 
 ▸ **rotate**(`angle`: number, `center?`: [Point2D](_point_.point2d.md)): *[Point2D](_point_.point2d.md)*
 
-*Defined in [point.ts:325](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L325)*
+*Defined in [point.ts:325](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L325)*
 
 **Parameters:**
 
@@ -465,7 +465,7 @@ ___
 
 ▸ **subtract**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d) | number): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:268](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L268)*
+*Defined in [point.ts:268](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L268)*
 
 Returns the subtraction of the supplied point to the point as a new point.
 
@@ -492,7 +492,7 @@ ___
 
 ▸ **toString**(): *string*
 
-*Defined in [point.ts:172](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L172)*
+*Defined in [point.ts:172](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L172)*
 
 **Returns:** *string*
 
@@ -502,7 +502,7 @@ ___
 
 ▸ **max**(`a`: [Point2D](_point_.point2d.md), `b`: [Point2D](_point_.point2d.md)): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:443](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L443)*
+*Defined in [point.ts:443](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L443)*
 
 Returns a new point object with the largest {@link #x} and {@link #y} of
 the supplied points.
@@ -543,7 +543,7 @@ ___
 
 ▸ **min**(`a`: [Point2D](_point_.point2d.md), `b`: [Point2D](_point_.point2d.md)): *[Point2D](_point_.point2d.md)‹›*
 
-*Defined in [point.ts:413](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L413)*
+*Defined in [point.ts:413](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L413)*
 
 Returns a new point object with the smallest {@link #x} and {@link #y} of
 the supplied points.
@@ -584,7 +584,7 @@ ___
 
 ▸ **zero**(): *[Point2D](_point_.point2d.md)*
 
-*Defined in [point.ts:383](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/point.ts#L383)*
+*Defined in [point.ts:383](https://github.com/datatorch/geometry.js/blob/a131d48/src/point.ts#L383)*
 
 Creates a zero point with both x and y values of zero.
 

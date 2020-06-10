@@ -12,7 +12,7 @@
 
 \+ **new Polygon**(`array`: [AnyPoint2D](../modules/_point_.md#anypoint2d)[]): *[Polygon](_polygon_.polygon.md)*
 
-*Defined in [polygon.ts:9](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L9)*
+*Defined in [polygon.ts:9](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L9)*
 
 **Parameters:**
 
@@ -24,7 +24,7 @@ Name | Type |
 
 \+ **new Polygon**(`array`: number[]): *[Polygon](_polygon_.polygon.md)*
 
-*Defined in [polygon.ts:11](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L11)*
+*Defined in [polygon.ts:11](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L11)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [polygon.ts:59](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L59)*
+*Defined in [polygon.ts:59](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L59)*
 
 **Returns:** *number*
 
@@ -54,7 +54,7 @@ ___
 
 *Overrides void*
 
-*Defined in [polygon.ts:54](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L54)*
+*Defined in [polygon.ts:54](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L54)*
 
 **Returns:** *[Rectangle](_rectangle_.rectangle.md)*
 
@@ -64,7 +64,7 @@ ___
 
 • **get firstPoint**(): *[Point2D](_point_.point2d.md) | null*
 
-*Defined in [polygon.ts:46](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L46)*
+*Defined in [polygon.ts:46](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L46)*
 
 **Returns:** *[Point2D](_point_.point2d.md) | null*
 
@@ -74,7 +74,7 @@ ___
 
 • **get lastPoint**(): *[Point2D](_point_.point2d.md) | null*
 
-*Defined in [polygon.ts:50](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L50)*
+*Defined in [polygon.ts:50](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L50)*
 
 **Returns:** *[Point2D](_point_.point2d.md) | null*
 
@@ -84,7 +84,7 @@ ___
 
 • **get points**(): *[Point2D](_point_.point2d.md)[]*
 
-*Defined in [polygon.ts:42](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L42)*
+*Defined in [polygon.ts:42](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L42)*
 
 **Returns:** *[Point2D](_point_.point2d.md)[]*
 
@@ -94,7 +94,7 @@ ___
 
 ▸ **_updateRequired**(): *void*
 
-*Defined in [polygon.ts:32](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L32)*
+*Defined in [polygon.ts:32](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L32)*
 
 **Returns:** *void*
 
@@ -104,7 +104,7 @@ ___
 
 ▸ **add**(`point`: [AnyPoint2D](../modules/_point_.md#anypoint2d)): *void*
 
-*Defined in [polygon.ts:37](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L37)*
+*Defined in [polygon.ts:37](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L37)*
 
 **Parameters:**
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **isEmpty**(): *boolean*
 
-*Defined in [polygon.ts:73](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L73)*
+*Defined in [polygon.ts:73](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L73)*
 
 **Returns:** *boolean*
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **segmentation**(): *number[]*
 
-*Defined in [polygon.ts:64](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L64)*
+*Defined in [polygon.ts:64](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L64)*
 
 **Returns:** *number[]*
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **getArea**(`polygon`: [AnyPoint2D](../modules/_point_.md#anypoint2d)[] | [Polygon](_polygon_.polygon.md), `signed`: boolean): *number*
 
-*Defined in [polygon.ts:77](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L77)*
+*Defined in [polygon.ts:77](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L77)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 ▸ **getBounds**(`polygon`: [AnyPoint2D](../modules/_point_.md#anypoint2d)[] | [Polygon](_polygon_.polygon.md)): *[Rectangle](_rectangle_.rectangle.md)*
 
-*Defined in [polygon.ts:95](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L95)*
+*Defined in [polygon.ts:95](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L95)*
 
 **Parameters:**
 
@@ -173,7 +173,7 @@ ___
 
 ▸ **getCentroid**(`polygon`: [AnyPoint2D](../modules/_point_.md#anypoint2d)[] | [Polygon](_polygon_.polygon.md)): *[Point2D](_point_.point2d.md)*
 
-*Defined in [polygon.ts:112](https://github.com/datatorch/geometry.js/blob/1f79f7e/src/polygon.ts#L112)*
+*Defined in [polygon.ts:112](https://github.com/datatorch/geometry.js/blob/a131d48/src/polygon.ts#L112)*
 
 **Parameters:**
 
