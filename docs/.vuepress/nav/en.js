@@ -6,10 +6,8 @@ module.exports = [
   {
     text: 'Open-source',
     items: [
-      {
-        text: 'Node',
-        items: [{ text: 'Unified Storage', link: '/other/node-storage' }]
-      }
+      { text: 'Node Storage', link: '/node/storage' },
+      { text: 'Geometry.js', link: '/js/geometry/' }
     ]
   },
   {
