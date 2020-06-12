@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "update": "yarn upgrade-interactive --latest",
     "build": "vuepress build docs --temp .temp",
     "dev": "vuepress dev docs --temp .temp",
     "lint": "eslint --ext .js,.vue docs/.vuepress",
