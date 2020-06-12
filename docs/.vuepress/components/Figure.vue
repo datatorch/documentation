@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CenteredImage :src="src" :width="width" :max-width="maxWidth" />
+    <CenteredImage :src="src" :width="width" :max-width="maxWidth" rounded />
     <div class="caption-text">Figure {{ num }}: {{ caption }}</div>
   </div>
 </template>

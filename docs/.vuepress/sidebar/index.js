@@ -13,6 +13,7 @@ module.exports = {
           collapsable: true,
           children: [
             'annotator/concepts',
+            'annotator/layouts',
             'annotator/images',
             'annotator/text',
             'annotator/audio'
