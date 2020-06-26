@@ -10,7 +10,7 @@
 
 ▸ **toDegree**(`rad`: number): *number*
 
-*Defined in [angle.ts:2](https://github.com/datatorch/geometry.js/blob/a131d48/src/angle.ts#L2)*
+*Defined in [angle.ts:2](https://github.com/datatorch/geometry.js/blob/4734bb2/src/angle.ts#L2)*
 
 **Parameters:**
 
@@ -26,7 +26,7 @@ ___
 
 ▸ **toRadians**(`degree`: number): *number*
 
-*Defined in [angle.ts:6](https://github.com/datatorch/geometry.js/blob/a131d48/src/angle.ts#L6)*
+*Defined in [angle.ts:6](https://github.com/datatorch/geometry.js/blob/4734bb2/src/angle.ts#L6)*
 
 **Parameters:**
 

@@ -12,13 +12,13 @@
 
 \+ **new Rectangle**(): *[Rectangle](_rectangle_.rectangle.md)*
 
-*Defined in [rectangle.ts:10](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L10)*
+*Defined in [rectangle.ts:10](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L10)*
 
 **Returns:** *[Rectangle](_rectangle_.rectangle.md)*
 
 \+ **new Rectangle**(`points`: object): *[Rectangle](_rectangle_.rectangle.md)*
 
-*Defined in [rectangle.ts:12](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L12)*
+*Defined in [rectangle.ts:12](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L12)*
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ Name | Type |
 
 \+ **new Rectangle**(`x`: number, `y`: number, `width`: number, `height`: number): *[Rectangle](_rectangle_.rectangle.md)*
 
-*Defined in [rectangle.ts:13](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L13)*
+*Defined in [rectangle.ts:13](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L13)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **height**: *number* = 0
 
-*Defined in [rectangle.ts:10](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L10)*
+*Defined in [rectangle.ts:10](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L10)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **width**: *number* = 0
 
-*Defined in [rectangle.ts:9](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L9)*
+*Defined in [rectangle.ts:9](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L9)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **x**: *number* = 0
 
-*Defined in [rectangle.ts:7](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L7)*
+*Defined in [rectangle.ts:7](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L7)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **y**: *number* = 0
 
-*Defined in [rectangle.ts:8](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L8)*
+*Defined in [rectangle.ts:8](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L8)*
 
 ## Accessors
 
@@ -86,7 +86,7 @@ ___
 
 *Overrides void*
 
-*Defined in [rectangle.ts:50](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L50)*
+*Defined in [rectangle.ts:50](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L50)*
 
 **Returns:** *number*
 
@@ -96,13 +96,13 @@ ___
 
 • **get bottomLeft**(): *[Point2D](_point_.point2d.md)*
 
-*Defined in [rectangle.ts:70](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L70)*
+*Defined in [rectangle.ts:74](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L74)*
 
 The bottom-left point of the rectangle.
 
 **Returns:** *[Point2D](_point_.point2d.md)*
 
-bottom-lef point
+bottom-left point
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **get bottomRight**(): *[Point2D](_point_.point2d.md)*
 
-*Defined in [rectangle.ts:86](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L86)*
+*Defined in [rectangle.ts:90](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L90)*
 
 The bottom-right point of the rectangle.
 
@@ -126,9 +126,19 @@ ___
 
 *Overrides void*
 
-*Defined in [rectangle.ts:54](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L54)*
+*Defined in [rectangle.ts:54](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L54)*
 
 **Returns:** *[Rectangle](_rectangle_.rectangle.md)*
+
+___
+
+###  size
+
+• **get size**(): *[Point2D](_point_.point2d.md)*
+
+*Defined in [rectangle.ts:58](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L58)*
+
+**Returns:** *[Point2D](_point_.point2d.md)*
 
 ___
 
@@ -136,7 +146,7 @@ ___
 
 • **get topLeft**(): *[Point2D](_point_.point2d.md)*
 
-*Defined in [rectangle.ts:62](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L62)*
+*Defined in [rectangle.ts:66](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L66)*
 
 The top-left point of the rectangle.
 
@@ -150,7 +160,7 @@ ___
 
 • **get topRight**(): *[Point2D](_point_.point2d.md)*
 
-*Defined in [rectangle.ts:78](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L78)*
+*Defined in [rectangle.ts:82](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L82)*
 
 The top-right point of the rectangle.
 
@@ -164,7 +174,7 @@ ___
 
 • **get xywh**(): *[number, number, number, number]*
 
-*Defined in [rectangle.ts:90](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L90)*
+*Defined in [rectangle.ts:94](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L94)*
 
 **Returns:** *[number, number, number, number]*
 
@@ -174,7 +184,7 @@ ___
 
 • **get xyxy**(): *[number, number, number, number]*
 
-*Defined in [rectangle.ts:94](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L94)*
+*Defined in [rectangle.ts:98](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L98)*
 
 **Returns:** *[number, number, number, number]*
 
@@ -184,7 +194,7 @@ ___
 
 ▸ **contains**(`a`: [Point2D](_point_.point2d.md)): *boolean*
 
-*Defined in [rectangle.ts:117](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L117)*
+*Defined in [rectangle.ts:121](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L121)*
 
 Tests if the specified point is inside the boundary of the rectangle.
 
@@ -200,7 +210,7 @@ Name | Type |
 
 ▸ **contains**(`a`: [Rectangle](_rectangle_.rectangle.md)): *boolean*
 
-*Defined in [rectangle.ts:126](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L126)*
+*Defined in [rectangle.ts:130](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L130)*
 
 Tests if the interior of the rectangle entirely contains the specified
 rectangle.
@@ -221,7 +231,7 @@ ___
 
 ▸ **include**(`point`: [Point2D](_point_.point2d.md)): *[Rectangle](_rectangle_.rectangle.md)*
 
-*Defined in [rectangle.ts:165](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L165)*
+*Defined in [rectangle.ts:169](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L169)*
 
 Adds a point to this rectangle. The resulting rectangle is the smallest
 rectangle that contains both the original rectangle and the specified
@@ -244,7 +254,7 @@ ___
 
 ▸ **polygon**(): *[Polygon](_polygon_.polygon.md)*
 
-*Defined in [rectangle.ts:98](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L98)*
+*Defined in [rectangle.ts:102](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L102)*
 
 **Returns:** *[Polygon](_polygon_.polygon.md)*
 
@@ -254,7 +264,7 @@ ___
 
 ▸ **segmentation**(): *number[]*
 
-*Defined in [rectangle.ts:107](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L107)*
+*Defined in [rectangle.ts:111](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L111)*
 
 **Returns:** *number[]*
 
@@ -264,7 +274,7 @@ ___
 
 ▸ **unite**(`rect`: [Rectangle](_rectangle_.rectangle.md)): *[Rectangle](_rectangle_.rectangle.md)*
 
-*Defined in [rectangle.ts:147](https://github.com/datatorch/geometry.js/blob/a131d48/src/rectangle.ts#L147)*
+*Defined in [rectangle.ts:151](https://github.com/datatorch/geometry.js/blob/4734bb2/src/rectangle.ts#L151)*
 
 Returns a new rectangle representing the union of this rectangle with the
 specified rectangle.

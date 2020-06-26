@@ -10,7 +10,7 @@
 
 \+ **new Segment**(`x`: number, `y`: number, `inX?`: undefined | number, `inY?`: undefined | number, `outX?`: undefined | number, `outY?`: undefined | number): *[Segment](_segment_.segment.md)*
 
-*Defined in [segment.ts:6](https://github.com/datatorch/geometry.js/blob/a131d48/src/segment.ts#L6)*
+*Defined in [segment.ts:6](https://github.com/datatorch/geometry.js/blob/4734bb2/src/segment.ts#L6)*
 
 **Parameters:**
 
@@ -27,7 +27,7 @@ Name | Type |
 
 \+ **new Segment**(`obj`: object): *[Segment](_segment_.segment.md)*
 
-*Defined in [segment.ts:15](https://github.com/datatorch/geometry.js/blob/a131d48/src/segment.ts#L15)*
+*Defined in [segment.ts:15](https://github.com/datatorch/geometry.js/blob/4734bb2/src/segment.ts#L15)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ Name | Type |
 
 • **handleIn**: *[Point2D](_point_.point2d.md)*
 
-*Defined in [segment.ts:5](https://github.com/datatorch/geometry.js/blob/a131d48/src/segment.ts#L5)*
+*Defined in [segment.ts:5](https://github.com/datatorch/geometry.js/blob/4734bb2/src/segment.ts#L5)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **handleOut**: *[Point2D](_point_.point2d.md)*
 
-*Defined in [segment.ts:6](https://github.com/datatorch/geometry.js/blob/a131d48/src/segment.ts#L6)*
+*Defined in [segment.ts:6](https://github.com/datatorch/geometry.js/blob/4734bb2/src/segment.ts#L6)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **point**: *[Point2D](_point_.point2d.md)*
 
-*Defined in [segment.ts:4](https://github.com/datatorch/geometry.js/blob/a131d48/src/segment.ts#L4)*
+*Defined in [segment.ts:4](https://github.com/datatorch/geometry.js/blob/4734bb2/src/segment.ts#L4)*
