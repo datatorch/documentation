@@ -39,7 +39,8 @@ module.exports = {
           title: 'Deployment',
           collapsable: true,
           children: ['helm-charts', 'docker-compose']
-        }
+        },
+        'monitoring'
       ]
     }
   ],
