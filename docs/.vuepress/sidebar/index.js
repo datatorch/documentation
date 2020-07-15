@@ -29,6 +29,11 @@ module.exports = {
             'python/examples'
           ]
         },
+        {
+          title: 'Agents',
+          collapsable: true,
+          children: ['agents/', 'agents/flows']
+        },
         'exports'
       ]
     },

@@ -14,9 +14,9 @@
     "root": true
   },
   "dependencies": {
-    "@vuepress/plugin-google-analytics": "^1.5.0",
-    "dayjs": "^1.8.26",
+    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "dayjs": "^1.8.29",
     "textlint": "^11.6.3",
-    "vuepress": "^1.5.0"
+    "vuepress": "^1.5.2"
   }
 }
