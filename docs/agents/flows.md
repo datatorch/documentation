@@ -90,3 +90,66 @@ steps.
 ### `jobs.<job_id>.steps.[].name`
 
 A name for your step to display on DataTorch.
+
+### `jobs.<job_id>.steps.[].action`
+
+**Required.** Selects an action to run as part of a step in your job. An action
+is a reusable unit of code. This property can ether be a `string` or an
+`object`.
+
+Using a `string` will default to using GitHub for downloading the action onto
+the agent. For example, `datatorch/python@v1` would download and run the action
+in the github repo `https://github.com.datatorch/python` with the tag v1. If an
+`action-datatorch.yaml` file does not exists, the job will fail.
+
+If you would like to store your actions on a different git service you can also
+specify an object containing the required information. This also may be useful
+if the action is private as you can specify the username and password in the
+URI.
+
+Object properties:
+
+- `action.name` **Required.** Name of the action
+- `action.tag` **Required.** Tag (or version) of the action. This tag will be
+  used when cloning the repo to specify the `--branch` parameter.
+- `action.git` (Defaults to Github). The URI of the repository to be cloned.
+
+#### Example
+
+Using action `string`:
+
+```yaml
+name: 'Action Example'
+jobs:
+  add:
+    steps:
+      - name: Python Example
+        action: datatorch/python@v1
+```
+
+Using action `object`:
+
+```yaml
+name: 'Action Example'
+jobs:
+  add:
+    steps:
+      - name: Python Example
+        # This will do the same as above
+        # Specify repository, both name and tag are required.
+        action:
+          name: datatorch/python
+          tag: v1
+          git: https://github.com/datatorch/python
+```
+
+### `jobs.<job_id>.steps.[].inputs`
+
+A `map` of the input parameters defined by the action. Each input parameter is a
+key/value pair.
+
+The inputs can be used for templating and are passed into each subprocess
+through arguments.
+
+In docker the parameters are set as environment variables in docker. The
+variable is prefixed with `INPUT_` and converted to upper case.
