@@ -8,6 +8,7 @@ module.exports = {
         '',
         'getting-started',
         'projects',
+        'exports',
         {
           title: 'Annotator',
           collapsable: true,
@@ -32,9 +33,8 @@ module.exports = {
         {
           title: 'Agents',
           collapsable: true,
-          children: ['agents/', 'agents/flows']
-        },
-        'exports'
+          children: ['agents/', 'agents/flows', 'agents/actions']
+        }
       ]
     },
     {
