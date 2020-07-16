@@ -8,8 +8,8 @@ processes that you can set up in your projects to build, test, package, release,
 or deploy any code or machine learning model. They are made up of individual
 tasks, called actions, and combine together to create jobs.
 
-With Agents you can build custom end-to-end machine learning cycles directly in
-your projects.
+With Agents you can build custom end-to-end machine learning pipelines directly
+in your projects.
 
 ## Creating an Agent
 

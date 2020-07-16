@@ -48,17 +48,17 @@ before continuing.
 
 ### `name`
 
-**Required.** The name of your flow bust me unique to the project. DataTorch
-displays the name of you flow under the `Flows` tab.
+**Required.** The name of your flow must me unique to the project. DataTorch
+displays the name of you flow under the `Flows` tab in your project.
 
 ### `jobs`
 
 **Required.**
-A workflow run is made up of one or more jobs. Jobs run in parallel by default.
+A flow run is made up of one or more jobs. Jobs run in parallel by default.
 
 ### `jobs.<job_id>`
 
-Each job must have an id to associate with the job. The key job_id is a string
+Each job must have an id to associate with the job. The key `job_id` is a string
 and its value is a map of the job's configuration data. You must replace
 <job_id> with a string that is unique to the jobs object. The <job_id> must
 start with a letter or \_ and contain only alphanumeric characters, -, or \_.
