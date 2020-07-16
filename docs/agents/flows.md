@@ -140,7 +140,7 @@ jobs:
         action:
           name: datatorch/python
           tag: v1
-          git: https://github.com/datatorch/python
+          git: git://github.com/datatorch/python.git
 ```
 
 ### `jobs.<job_id>.steps.[].inputs`

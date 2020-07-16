@@ -33,7 +33,12 @@ module.exports = {
         {
           title: 'Agents',
           collapsable: true,
-          children: ['agents/', 'agents/flows', 'agents/actions']
+          children: [
+            'agents/',
+            'agents/flows',
+            'agents/actions',
+            'agents/variables'
+          ]
         }
       ]
     },
