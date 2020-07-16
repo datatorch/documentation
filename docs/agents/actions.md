@@ -1,7 +1,7 @@
 # Actions
 
 Actions are individual tasks that you can combine to create jobs and customize
-your flows. You can create your own actions, or use and customize actions shared
+your pipelines. You can create your own actions, or use and customize actions shared
 by the DataTorch community.
 
 You can create actions by writing custom code that interacts with your
@@ -13,7 +13,7 @@ an action's inputs, outputs, and environment variables.
 
 ## Types of Actions
 
-Currently DataTorch supports the following types of enviroments that can be used
+Currently DataTorch supports the following types of environments that can be used
 to run your action:
 
 | Type         | Operating System |

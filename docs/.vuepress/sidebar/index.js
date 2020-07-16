@@ -35,7 +35,7 @@ module.exports = {
           collapsable: true,
           children: [
             'agents/',
-            'agents/flows',
+            'agents/pipelines',
             'agents/actions',
             'agents/variables'
           ]

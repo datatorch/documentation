@@ -3,10 +3,10 @@
 DataTorch offers a powerful execution environment runner for setting up
 pipelines and automating your machine learning lifecycle.
 
-Agents are used to execute custom tasks called Flows. Flows are custom automated
-processes that you can set up in your projects to build, test, package, release,
-or deploy any code or machine learning model. They are made up of individual
-tasks, called actions, and combine together to create jobs.
+Agents are used to execute custom tasks called pipelines. Pipelines are custom
+automated processes that you can set up in your projects to build, test,
+package, release, or deploy any code or machine learning model. They are made up
+of individual tasks, called actions, and combine together to create jobs.
 
 With Agents you can build custom end-to-end machine learning pipelines directly
 in your projects.
