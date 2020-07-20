@@ -6,7 +6,7 @@
 
 Ƭ **AnyPoint2D**: *[Point2D](../classes/_point_.point2d.md) | object | [number, number]*
 
-*Defined in [point.ts:4](https://github.com/datatorch/geometry.js/blob/4734bb2/src/point.ts#L4)*
+*Defined in [point.ts:4](https://github.com/datatorch/geometry.js/blob/89ff6a7/src/point.ts#L4)*
 
 ___
 
@@ -14,4 +14,4 @@ ___
 
 Ƭ **AnyPoint3D**: *[Point3D](../classes/_point_.point3d.md) | object | [number, number, number]*
 
-*Defined in [point.ts:5](https://github.com/datatorch/geometry.js/blob/4734bb2/src/point.ts#L5)*
+*Defined in [point.ts:5](https://github.com/datatorch/geometry.js/blob/89ff6a7/src/point.ts#L5)*

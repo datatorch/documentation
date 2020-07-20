@@ -10,7 +10,7 @@
 
 ▸ **getArea**(`v`: [CurveValues](../modules/_cruve_.md#curvevalues)): *number*
 
-*Defined in [cruve.ts:39](https://github.com/datatorch/geometry.js/blob/4734bb2/src/cruve.ts#L39)*
+*Defined in [cruve.ts:39](https://github.com/datatorch/geometry.js/blob/89ff6a7/src/cruve.ts#L39)*
 
 **Parameters:**
 
@@ -26,7 +26,7 @@ ___
 
 ▸ **toArray**(`s1`: [Segment](_segment_.segment.md), `s2`: [Segment](_segment_.segment.md), `ignoreHandles`: boolean): *[CurveValues](../modules/_cruve_.md#curvevalues)*
 
-*Defined in [cruve.ts:21](https://github.com/datatorch/geometry.js/blob/4734bb2/src/cruve.ts#L21)*
+*Defined in [cruve.ts:21](https://github.com/datatorch/geometry.js/blob/89ff6a7/src/cruve.ts#L21)*
 
 Returns array in simple format for easier mathematical manipulation
 
