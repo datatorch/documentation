@@ -34,7 +34,7 @@ more than 30 days.
 
 1. **Install the DataTorch CLI.** You must be running python 3.6+.
    ```sh
-   pip install datatorch
+   pip install datatorch[agent]
    ```
    You should now be able to access the CLI tool by running:
    ```
