@@ -18,6 +18,10 @@ pipeline files using the DataTorch CLI tool. Once you've successfully created a
 pipeline file and triggered the pipeline, you will see the build logs, tests
 results, artifacts, and statuses for each step of your pipeline.
 
+## Use cases
+
+Pipelines are extremely useful for running repetitive tasks that can be automated.
+
 ## Creating a pipeline
 
 1. On DataTorch, navigate to the main page of the project.
