@@ -7,7 +7,7 @@ title: Import COCO Annotations
 
 Importing COCO Annotations into DataTorch is simple and easy. It is done by using the DataTorch Python client to read in a COCO JSON file, which is then mapped to a corresponding project and dataset in the web client.
 
-## Setup Python client
+## Setup Python Client
 
 Before you can import annotations, make sure you have installed and logged into the DataTorch Python client on the local machine that you will be importing your annotations from.
 
@@ -20,7 +20,7 @@ Before you can import annotations, make sure you have installed and logged into 
 
 ## Align Files and Labels
 
-After setting up the Python client, you will need to do some set up in the DataTorch web client to make sure the files and labels in your Project match up to the imported COCO JSON file.
+After setting up the Python client, you will need to do some setup in the DataTorch web client to make sure the files and labels in your Project match up to the imported COCO JSON file.
 
 For the files:
 
