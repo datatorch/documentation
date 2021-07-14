@@ -4,7 +4,7 @@ title: Set up DataTorch Python client
 ---
 # Setup DataTorch Python Client
 
-## Install Python client
+## Install Python Client
 
 Simply run this command to install:
 
@@ -43,7 +43,7 @@ You will recieve a prompt with your key. Mark it down securely so that you can c
   caption="API key"
 />
 
-## Login to Python client
+## Log in to Python Client
 
 Now that you have your API key, login to the client by using: 
 
