@@ -7,9 +7,9 @@ title: Annotate using Keypoints
 
 Before we can use the Keypoints tool, we will need to create a keypoint-compatible label, by adding additional metadata to the label. This metadata is a JSON object that details the keypoint skeleton for each instance of that label, in COCO format.
 
-## Create a Keypoint-compatible label
+## Create a Keypoint-compatible Label
 
-First, go to the Labels Tab and create a new label, in this example, we will create a label and call it "Skeleton".
+First, go to the Labels Tab and create a new label. In this example, we will create a label and call it "Skeleton".
 
 <Figure 
   src="/figures/tutorials/keypoints/create-label.png"
@@ -27,7 +27,7 @@ After the label is created, select it by checking the checkbox next to it, then 
   caption="The edit label icon"
 />
 
-In the Update Label modal, click the "more options" dropdown and you will see the input field for Metadata.
+In the Update Label modal, click the "More Options" dropdown and you will see the input field for Metadata.
 
 <Figure 
   src="/figures/tutorials/keypoints/update-label.png"
@@ -120,9 +120,9 @@ Here is a more complicated example that describes a human skeleton for pose esti
 
 :::
 
-We will be using the four-point keypoint annotation for simplicity's sake in this example. Add the metadata to the field and click "update".
+We will be using the four-point keypoint annotation for simplicity's sake. Add the metadata to the field and click "Update".
 
-## Annotate with the Keypoint tool
+## Annotate with the Keypoint Tool
 
 Now that the label has the additional metadata defined, we are ready to annotate it using the Keypoint tool in the annotator. After navigating to your file and entering the annotator, make sure the correct label is selected in the upper right corner of the annotator. If it is not, click on the label icon then select the appropriate label.
 
@@ -135,7 +135,7 @@ Afterwards, click the Keypoints icon in the toolbar on the left side of the scre
   caption="Keypoints icon in the annotator"
 />
 
-You should see the name of your first keypoint above your mouse cursor. Simply click through the keypoints in the order that you defined them, and the label will automatically generate and show up in the label stack after cycling through all of the points.
+You should see the name of your first keypoint above your mouse cursor. Simply click through the keypoints in the order that you defined them and the label will automatically generate and show up in the label stack after cycling through all of the points.
 
 <Figure 
   src="/figures/tutorials/keypoints/keypoints-annotator.png"
