@@ -24,7 +24,7 @@ module.exports = context => ({
     editLinks: true,
     smoothScroll: true,
     docsDir: 'docs',
-    sidebarDepth: 2,
+    sidebarDepth: 1,
     algolia: {
       apiKey: '50841ae57ba1849ebda7fd9772332dc7',
       indexName: 'datatorch'

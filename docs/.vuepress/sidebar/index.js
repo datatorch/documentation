@@ -52,6 +52,14 @@ module.exports = {
         },
         'monitoring'
       ]
+    },
+    {
+      title: 'Tutorials',
+      children: [
+        'tutorial-keypoints',
+        'tutorial-import-coco',
+        'tutorial-setup-python'
+      ]
     }
   ],
   geometryjs: () => [...geometryjs]
