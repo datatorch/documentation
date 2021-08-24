@@ -9,13 +9,31 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+stages:
+- stage: CI
+  displayName: CI Stage
+  jobs:
+  - job: build
+    displayName: Build
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '10.x'
+      displayName: 'Install Node.js'
+    - script: |
+        npm install
+        yarn build
+      displayName: 'yarn build'
 
-- script: |
-    npm install
-    yarn build
-  displayName: 'yarn build'
+- stage: CD
+  displayName: CD Stage
+  jobs:
+  - deployment: deploy
+    displayName: Deploy
+    environment: Docs
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo This is a DEPLOYMENT job
+            displayName: 'Deploy project'
