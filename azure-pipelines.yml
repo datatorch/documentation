@@ -17,5 +17,5 @@ steps:
 
 - script: |
     npm install
-    npm run build
-  displayName: 'npm install and build'
+    yarn dev
+  displayName: 'yarn dev'
