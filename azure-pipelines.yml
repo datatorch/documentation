@@ -17,5 +17,6 @@ steps:
 
 - script: |
     npm install
+    npm install yarn
     yarn dev
   displayName: 'yarn dev'
