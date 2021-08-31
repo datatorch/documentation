@@ -30,7 +30,9 @@ stages:
   jobs:
   - deployment: deploy
     displayName: Deploy
-    environment: Docs
+    environment: 
+      name: Docs
+      resourceType: VirtualMachine
     strategy:
       runOnce:
         deploy:
