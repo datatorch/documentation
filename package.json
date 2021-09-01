@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "update": "yarn upgrade-interactive --latest",
-    "build": "vuepress build docs --temp .temp",
+    "build": "vuepress build docs -c",
     "dev": "vuepress dev docs --temp .temp",
     "lint": "eslint --ext .js,.vue docs/.vuepress",
     "serve": "vuepress serve"
