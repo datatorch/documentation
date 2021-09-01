@@ -7,7 +7,7 @@
     "build": "vuepress build",
     "dev": "vuepress dev docs --temp .temp",
     "lint": "eslint --ext .js,.vue docs/.vuepress",
-    "serve": "vuepress serve"
+    "serve": "vuepress serve docs/.vuepress/dist"
   },
   "eslintConfig": {
     "extends": "vuepress",
