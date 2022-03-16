@@ -1,6 +1,6 @@
 ---
-id: intro
-title: Getting Started
+id: quickstart
+title: Quickstart
 ---
 
 <CenteredImage src="rocket.png" width="40%" />
