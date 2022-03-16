@@ -3,7 +3,7 @@ id: background
 title: Background
 ---
 
-# Project Management
+# What is DataTorch?
 ### Use DataTorch to organize the components of your machine learning model.
 **Projects** provide a central location for all of the parts of a particular machine learning project:
 - collaborators
