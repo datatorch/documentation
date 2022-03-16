@@ -3,7 +3,7 @@ id: overview-automation
 title: Overview
 ---
 
-# Project Management
+# Automation
 
 DataTorch is a developer tool for building computer vision models.
 

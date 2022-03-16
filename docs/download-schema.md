@@ -3,6 +3,6 @@ id: download-schema
 title: Download annotations from schema
 ---
 
-# Loading a dataset in Python
+# Download annotations from schema
 
-sdfsdfsdfsdafasdfsd
+We are currently revaming our documenation and this is a work in progress - Michael, March 16, 2022

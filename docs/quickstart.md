@@ -7,10 +7,9 @@ title: Quickstart
 
 # Getting Started
 
-In this section we will quickly get you up and annotating data. We will look at
-creating projects, uploading data, annotating data and finally exporting data.
+Quickly set a project up, upload and annotate data, and export the result.
 
-## Signing up
+## Sign up
 
 Go the [sign up page](https://datatorch.io/auth?tab=register) and create an
 account or use an existing service for authentication. Follow the prompts to
@@ -44,10 +43,6 @@ You can add users to your project using the Memebers tab.
   max-width="320px"
   caption="Form used to invite members to a project"
 />
-
-Default classes are created for each of your projects. If you would like to
-learn more about creating custom roles, checkout [User
-Roles](/projects.html#user-roles).
 
 ## Uploading your Data
 
@@ -88,16 +83,3 @@ maximum of 50 files with a 50 MB size for each file.
 Exports allow you download your annotations in order to begin training your
 machine learning models. DataTorch allows you to specify exactly which
 properties of your dataset you would like to export.
-
-## Discovering projects
-
-If there's a particular topic that interests you, the visit
-[Topics](https://datatorch.io/topics) webpage. For example, if you are
-interested in datasets related to cars, you can find relevant projects by going
-to [https://datatorch.io/topics/cars](https://datatorch.io/topics/cars). You can
-also search for projects that match a topic you're interested in by using the
-search form found in the navigation bar.
-
-If you've been active on DataTorch, you can find personalized recommendations
-for projects and good first issues based on your past contributions, stars, and
-other activities in Explore.

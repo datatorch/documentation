@@ -23,9 +23,9 @@ title: Overview
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
-Create a project in DataTorch and add a team of 4 collaborators with varying permissions.
+Create a project in DataTorch and add a team of collaborators with varying permissions.
 
-[See how](/tutorial-collab-project-setup)
+[See how →](/tutorial-collab-project-setup)
 
 <br/>
 

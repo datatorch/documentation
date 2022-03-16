@@ -3,7 +3,7 @@ id: overview-data-annotation
 title: Overview
 ---
 
-# Project Management
+# Data Annotation
 
 DataTorch is a developer tool for building computer vision models.
 
