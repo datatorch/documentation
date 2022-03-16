@@ -21,7 +21,7 @@ DataTorch revolves around the management of **projects**, which encapsulate of a
 
 Get started annotating a dataset and exporting it in COCO format right away.
 
-[Get Started](/quickstart)
+[Get Started →](/quickstart)
 
 <br/>
 
@@ -37,7 +37,7 @@ Get started annotating a dataset and exporting it in COCO format right away.
 
 Organize datasources, datasets, ontologies, and people with DataTorch.
 
-[Learn More](/overview-project-management)
+[Learn More →](/overview-project-management)
 
 <br/>
 
@@ -53,7 +53,7 @@ Organize datasources, datasets, ontologies, and people with DataTorch.
 
 Create a variety of annotation types, collaboratively annotate data, and export result in different formats.
 
-[Learn More](/overview-data-annotation)
+[Learn More →](/overview-data-annotation)
 
 <br/>
 
@@ -69,7 +69,7 @@ Create a variety of annotation types, collaboratively annotate data, and export 
 
 Utilize Agents and Pipelines to automate processes in your machine learning development process.
 
-[Learn More](/overview-automation)
+[Learn More →](/overview-automation)
 
 <br/>
 

@@ -5,67 +5,82 @@ title: Quickstart - Project Set Up
 
 # Set up a collaborative project in DataTorch
 
-Create a project, invite 5 collaborators, and give them different permissions, as a prelude to data annotation work.
+Create a project, invite collaborators, and give them different permissions as a prelude to data annotation work.
 
 ## Create Project
 
-Before you can import annotations, make sure you have installed and logged into the DataTorch Python client on the local machine that you will be importing your annotations from.
+Create a project. Since we are going to have users with different permissionns, set the visibility to 'Private'.
 
-<Figure 
-  src="/figures/tutorials/setup-python-client/datatorch-help.png"
-  width="100%"
-  max-width="450px"
-  caption="Output of the datatorch --help command"
-/>
+<img src="/figures/getting-started/create-project.png"
+    width="500px"
+     alt="Markdown Monster icon" />
 
-## Upgrade Account
+Once it is created, it will take us to the Project Summary page.
 
-After setting up the Python client, you will need to do some setup in the DataTorch web client to make sure the files and labels in your Project match up to the imported COCO JSON file.
+## Optional: Upgrade Account
 
-For the files:
+DataTorch is free for personal use, and you are able to add up to 2 more collaborators for free to any private project.
 
-- Make a Project in DataTorch
-- Create a Dataset containing the raw image files with the exact same filenames as those listed in the COCO JSON file
+However, if you wish to go beyond this limit, you will have to upgrade to a Pro account. Click your user icon in the upper right corner, then click "Upgrade" and follow the prompts.
 
-For the labels:
+<img src="/figures/getting-started/create-project.png"
+    width="500px"
+     alt="Markdown Monster icon" />
 
-- Create unique labels in DataTorch with label names matching each of the annotation classes listed in the COCO JSON file
+## Add collaborators
 
-## Invite Collaborators
+While in the Project page, click "Members" at the bottom to invite collaborators to your project.
+Each of your collaborators must have an existing DataTorch account. 
 
-After aligning the files and labels, we are almost ready to import our annotations, but first we need the project ID to input as a parameter to the import function.
+Type the usernames of any accounts you wish to add to the project, and click the "Add" button within the input to add them to the selection group. Select a permission group for selected users (we can change it later), then click the green "Add" button.
 
-To do this:
+<img src="/figures/getting-started/create-project.png"
+    width="500px"
+     alt="Markdown Monster icon" />
 
-- Navigate to the Project containing your import files
-- Go to "Settings" tab under Miscellaneous
-
-<Figure 
-  src="/figures/tutorials/import-coco/settings.png"
-  width="100%"
-  max-width="200px"
-  caption="The Settings tab"
-/>
-
-- Under "Overview" → "General" you should see your project ID. Copy this to your clipboard.
-
-<Figure 
-  src="/figures/tutorials/import-coco/project-id.png"
-  width="100%"
-  max-width="900px"
-  caption="The project ID"
-/>
+Even though our project is private, when they log in, they will now be able to see the project.
 
 ## Manage Permissions
 
-In your local machine containing the Python client and COCO JSON file, navigate to the directory containing the JSON file then run the command:
+You should now see the users you just added appear under the Members header.
 
-```python
-datatorch import coco
-```
+To change permissions, simply click the drop down next to the user you wish to edit and select the appropriate permission.
+It will update automatically.
 
-At the "File" prompt, put in the name of the JSON file containing your COCO annotations.
+<img src="/figures/getting-started/create-project.png"
+    width="500px"
+     alt="Markdown Monster icon" />
 
-At the "Project" prompt,  paste in the Project ID you obtained earlier to complete the import process.
+[Learn more about permissions →](/)
 
-After this is complete, if you return to the web client, you should see the annotations will be uploaded into the previously raw image files.
+<hr>
+
+<br>
+
+## Next Steps
+
+Congrats! You have created a new DataTorch project with multiple users and permissions. All you need to do now is add data to the project to start annotating.
+
+<br />
+
+---
+
+# Create dataset with mutiple filesources
+<img src="/figures/getting-started/create-project.png"
+    width="200px"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
+Create a dataset in your project that consolidates data from different storages.
+
+[See how →](/tutorial-data-setup)
+
+<br/>
+
+<br/>
+
+---
+
+<br/>
+
+<br/>
