@@ -11,7 +11,7 @@ Create a project, invite collaborators, and give them different permissions as a
 
 Create a project. Since we are going to have users with different permissionns, set the visibility to 'Private'.
 
-<img src="/figures/getting-started/create-project.png"
+<img src="/figures/quickstart-project-setup/create-project.png"
     width="500px"
      alt="Markdown Monster icon" />
 
@@ -23,8 +23,8 @@ DataTorch is free for personal use, and you are able to add up to 2 more collabo
 
 However, if you wish to go beyond this limit, you will have to upgrade to a Pro account. Click your user icon in the upper right corner, then click "Upgrade" and follow the prompts.
 
-<img src="/figures/getting-started/create-project.png"
-    width="500px"
+<img src="/figures/quickstart-project-setup/upgrade-account.png"
+    width="250px"
      alt="Markdown Monster icon" />
 
 ## Add collaborators
@@ -34,8 +34,8 @@ Each of your collaborators must have an existing DataTorch account.
 
 Type the usernames of any accounts you wish to add to the project, and click the "Add" button within the input to add them to the selection group. Select a permission group for selected users (we can change it later), then click the green "Add" button.
 
-<img src="/figures/getting-started/create-project.png"
-    width="500px"
+<img src="/figures/quickstart-project-setup/add-collaborators.png"
+    width="800px"
      alt="Markdown Monster icon" />
 
 Even though our project is private, when they log in, they will now be able to see the project.
@@ -47,8 +47,8 @@ You should now see the users you just added appear under the Members header.
 To change permissions, simply click the drop down next to the user you wish to edit and select the appropriate permission.
 It will update automatically.
 
-<img src="/figures/getting-started/create-project.png"
-    width="500px"
+<img src="/figures/quickstart-project-setup/manage-permissions.png"
+    width="800px"
      alt="Markdown Monster icon" />
 
 [Learn more about permissions →](/)
@@ -66,7 +66,7 @@ Congrats! You have created a new DataTorch project with multiple users and permi
 ---
 
 # Create dataset with mutiple filesources
-<img src="/figures/getting-started/create-project.png"
+<img src="/figures/quickstart-project-setup/create-project.png"
     width="200px"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />

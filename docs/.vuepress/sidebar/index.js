@@ -8,7 +8,10 @@ module.exports = {
       children: [
         '',
         'quickstart',
-        'background'
+        {
+          title: 'Background',
+          collapsable: false,
+        }
       ]
     },
 
@@ -19,12 +22,27 @@ module.exports = {
         'overview-project-management',
         'tutorial-collab-project-setup',
         'tutorial-data-setup',
-        'create-projects',
-        'create-organizations',
-        'collaborators-permissions',
-        'project-about-section',
-        'manage-filesources',
-        'manage-datasets',
+        'projects',
+        {
+          title: 'Organizations',
+          collapsable: false,
+        },
+        {
+          title: 'Collaborators and permissions',
+          collapsable: false,
+        },
+        {
+          title: 'Dashboards',
+          collapsable: false,
+        },
+        {
+          title: 'Filesources',
+          collapsable: false,
+        },
+        {
+          title: 'Datasets',
+          collapsable: false,
+        }
       ]
     },
 
@@ -33,6 +51,7 @@ module.exports = {
       collapsable: false,
       children: [
         'overview-data-annotation',
+        'tutorial-keypoints',
         'annotate-existing-label',
         'create-label',
         'annotation-tools',

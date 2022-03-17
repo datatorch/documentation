@@ -9,18 +9,16 @@ title: Quickstart
 
 Quickly set a project up, upload and annotate data, and export the result.
 
+You can watch [this video](https://www.youtube.com/watch?v=kM4O1HoyPDc) for a full demonstration of everything in this guide.
+
 ## Sign up
 
-Go the [sign up page](https://datatorch.io/auth?tab=register) and create an
-account or use an existing service for authentication. Follow the prompts to
-create your personal account.
+Go the [sign up page](https://datatorch.io/auth?tab=register) and follow the prompts to create an account.
 
-## Creating a Project
+## Create Project
 
 Once you have registered an account, you can create a project by clicking the
-plus icon ( **+** ) found on the navigation bar. During the creation process of
-a project you can customize some of the options. Further customization can be
-done in the settings panel of the project.
+plus icon ( **+** ) found on the navigation bar.
 
 <Figure 
   src="/figures/getting-started/create-project.png"
@@ -29,57 +27,69 @@ done in the settings panel of the project.
   caption="Initial form for creating a project"
 />
 
-Once you have created your project you will be redirected to the home page. You
-can expand the sidebar by clicking the double caret icon ( **»** ) at the bottom to view
-the title of each tab.
+Once you have created your project you will be redirected to the home page.
 
-### Sharing your Project
+## Upload Data
 
-You can add users to your project using the Memebers tab.
+The fastest way to create a dataset ready for annotation is by going to the Datasets tab, creating a new dataset, then uploading files in the modal that appears immediately after creating the dataset:
 
 <Figure 
-  src="/figures/getting-started/invite-members.png"
+  src="/figures/getting-started/fast-upload.png"
   width="100%"
-  max-width="320px"
-  caption="Form used to invite members to a project"
+  max-width="800px"
+  caption="Upload screen immediately after creating a dataset"
 />
 
-## Uploading your Data
+Each project is provided with an Azure storage account as the default Datasource, so there is no additional setup required.
 
-Before you are able to upload files, you first must create a datasets. You can
-think of datasets as folders, they are intend to help manage large datasets.
-Futhermore, they can become useful when creating export schemas (more on this
-later).
+## Annotate Data
 
-Next, we must configure where the files will be stored. If a default storage
-mount has been configured for your instance, once will be added on the creation
-of your project. Otherwise you must configure a storage mount.
+Click on your file in the Dataset to enter the annotator.
 
-Currently, DataTorch supports:
+In the upper right corner, you will see the active label for annotation.
 
-- Local
-- AWS S3 Buckets
-- Azure Blobs
-- Google Cloud Buckets
+<Figure 
+  src="/figures/getting-started/annotator.png"
+  width="100%"
+  max-width="800px"
+  caption="Annotator with key portions selected"
+/>
 
-If you would like to request additional support for other storage options,
-please create an issue on the [node-storage
-repository](https://github.com/datatorch/node-storage).
+We havent created any labels yet, but you can do so directly in the annotator by pressing 'q' on your keyboard.
 
-### Creating a Storage Mount
+Select your newly created label as the active label, then use the tools on the toolbar on the left to start annotating.
 
-To mount a custom storage go to your projects `Settings > Storage` menu. From
-here, click the add button in the top right corner. Fill in the correct
-information to connect to your storage mount.
+## Download Annotations
 
-Once you have successfully created a storage mount, the option to upload files
-to a dataset will become available. Currently the webclient is limited to a
-maximum of 50 files with a 50 MB size for each file.
+DataTorch generates exports based on something called schemas, which are essentially conditional statements that define the annotations and files which you want to include in your export.
 
-## Annotating Files
+### Create Export Schema
 
-## Creating Exports
+In project page, click “Exports” then “New Schema”.
 
-Exports allow you download your annotations in order to begin training your
-machine learning models. DataTorch allows you to specify exactly which
-properties of your dataset you would like to export.
+Name the new schema whatever you want, change the Format to COCO, and leave Storage as is.
+
+You can create conditions here, but if you leave everything else alone, the schema defaults to exporting all annotations.
+
+Finally, click “Create” to create your schema.
+
+<Figure 
+  src="/figures/getting-started/schema.png"
+  width="100%"
+  max-width="800px"
+  caption="Schema designer"
+/>
+
+### Run Schema
+
+Once the schema is created, click on it, then click “Run Export” to tell it to execute.
+
+<Figure 
+  src="/figures/getting-started/run-export.png"
+  width="100%"
+  max-width="800px"
+  caption="Schema status view"
+/>
+
+Depending on the size of the schema, it might take some time to run, but the State indicator will change depending on the status. When it says “Success”, click on it and then click the “Download” button in the top right corner. Your COCO JSON file will download with all of the annotations included!
+

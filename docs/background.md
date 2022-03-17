@@ -3,32 +3,10 @@ id: background
 title: Background
 ---
 
-# What is DataTorch?
-### Use DataTorch to organize the components of your machine learning model.
-**Projects** provide a central location for all of the parts of a particular machine learning project:
-- collaborators
-- filesources
-- datasets
-- annotations
-- workspaces
-- exports
+# What is DataTorch for?
 
-<br />
+### This section is meant to provide context for people with little to no background in the machine learning development process.
 
----
+<br>
 
-# Set up a collaborative project
-<img src="/figures/getting-started/create-project.png"
-    width="200px"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
-
-Create a project in DataTorch and add a team of collaborators with varying permissions.
-
-[See how →](/tutorial-collab-project-setup)
-
-<br/>
-
-<br/>
-
----
+Coming soon!

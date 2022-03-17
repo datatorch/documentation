@@ -1,6 +1,6 @@
 ---
-id: create-projects
-title: Create Projects
+id: projects
+title: Projects
 ---
 
 <CenteredImage src="intro.png" width="42%" />

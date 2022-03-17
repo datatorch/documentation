@@ -5,7 +5,7 @@ title: Overview
 
 # Project Management
 ### Use DataTorch to organize the components of your machine learning model.
-**Projects** provide a central location for all of the parts of a particular machine learning project:
+In Datatorch, **Projects** provide a central location for all of the components of a machine learning project:
 - collaborators
 - filesources
 - datasets

@@ -30,8 +30,8 @@ Get started annotating a dataset and exporting it in COCO format right away.
 ---
 
 # Project Management
-<img src="/figures/getting-started/create-project.png"
-    width="200px"
+<img src="/figures/home-intro/project-management.png"
+    width="150px"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
@@ -46,8 +46,8 @@ Organize datasources, datasets, ontologies, and people with DataTorch.
 ---
 
 # Data Annotation
-<img src="/figures/getting-started/create-project.png"
-    width="200px"
+<img src="/figures/home-intro/annotate.png"
+    width="150px"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
@@ -62,8 +62,8 @@ Create a variety of annotation types, collaboratively annotate data, and export 
 ---
 
 # Automation
-<img src="/figures/getting-started/create-project.png"
-    width="200px"
+<img src="/figures/home-intro/automate.png"
+    width="150px"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
