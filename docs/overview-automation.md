@@ -4,14 +4,8 @@ title: Overview
 ---
 
 # Automation
-### Use DataTorch to organize the components of your machine learning model.
-In Datatorch, **Projects** provide a central location for all of the components of a machine learning project:
-- collaborators
-- filesources
-- datasets
-- annotations
-- workspaces
-- exports
+### Utilize DataTorch's developer tools to automate any part of your machine learning workflow.
+Datatorch features a **GraphQL API**, **Python client**, and **MLOps Pipelines** to empower developers with the ability to customize and automate any part of their machine learning workflow.
 
 <br />
 
