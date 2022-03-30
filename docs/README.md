@@ -31,7 +31,7 @@ Get started annotating a dataset and exporting it in COCO format right away.
 
 # Project Management
 <img src="/figures/home-intro/project-management.png"
-    width="150px"
+    width="125px"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 

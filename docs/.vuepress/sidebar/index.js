@@ -68,7 +68,9 @@ module.exports = {
       collapsable: false,
       children: [
         'overview-automation',
-        'install-python',
+        'tutorial-upload-data-python',
+        'tutorial-graphql-api',
+        'tutorial-agents-pipelines',
         'tutorial-import-coco',
         {
           title: 'Python',
