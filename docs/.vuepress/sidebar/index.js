@@ -51,6 +51,8 @@ module.exports = {
       collapsable: false,
       children: [
         'overview-data-annotation',
+        'tutorial-data-annotation',
+        'tutorial-exports',
         'tutorial-keypoints',
         'annotate-existing-label',
         'create-label',
