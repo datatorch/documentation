@@ -1,13 +1,15 @@
 ---
-id: upload-data-python-tutorial
-title: Quickstart - Upload data with script
+id: tutorial-upload-data-google-collab
+title: Quickstart - Upload data in Colab
 ---
-# Upload data to DataTorch with the Python client
+# Upload data from Google Collab to a Filesource in DataTorch
 
-Take an existing project, and use DataTorch Python client to upload data to it.
+Take a folder of images in Google Collab, and use DataTorch Python client to upload the files into a cloud storage in a Project's Filesources.
 
 ---
 
+
+---
 In terms of storage, logistics, and management, managing large datasets can be cumbersome.
 
 By using our Python client to upload data to your project, you can bypass a significant amount of manual effort, and write scripts to control when and how your data is uploaded:

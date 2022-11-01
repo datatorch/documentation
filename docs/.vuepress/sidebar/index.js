@@ -73,16 +73,6 @@ module.exports = {
         'tutorial-agents-pipelines',
         'tutorial-import-coco',
         {
-          title: 'Python',
-          collapsable: true,
-          children: [
-            'python/',
-            'python/cli',
-            'python/environment-variables',
-            'python/examples'
-          ]
-        },
-        {
           title: 'Agents',
           collapsable: true,
           children: [
@@ -92,6 +82,19 @@ module.exports = {
             'agents/variables'
           ]
         }
+      ]
+    },
+
+    {
+      title: 'Python',
+      collapsable: false,
+      children: [
+        'python/overview-python',
+        'tutorial-upload-data-python',
+        'python/tutorial-upload-data-google-collab',
+        'python/cli',
+        'python/environment-variables',
+        'python/examples'
       ]
     }
   ],
