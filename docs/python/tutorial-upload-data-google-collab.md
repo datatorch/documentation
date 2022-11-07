@@ -4,28 +4,31 @@ title: Quickstart - Upload data in Colab
 ---
 # Upload data from Google Collab to a Filesource in DataTorch
 
-Take a folder of images in Google Collab, and use DataTorch Python client to upload the files into a cloud storage in a Project's Filesources.
+Take a folder of images in Google Colab, and use DataTorch Python client to upload the files into a cloud storage in a Project's Filesources.
 
 ---
 
+With the Python client, you are able to move images directly from Google Colab into your DataTorch project, with a few simple lines of code.
 
----
-In terms of storage, logistics, and management, managing large datasets can be cumbersome.
-
-By using our Python client to upload data to your project, you can bypass a significant amount of manual effort, and write scripts to control when and how your data is uploaded:
 ```python
 # Import datatorch
 import datatorch
 
-# Assign API and Project to variables
-api = datatorch.api.ApiClient(api_key='ebawe75bf-5fe4-41c3-0049-59fb4c25b180')
-proj = api.project('54a5s11c-843e-0911-839d-395bg634g9g0')
+# Assign API and Project to variables and set the api_url parameter to the DataTorch URL
+api = datatorch.api.ApiClient(api_key='abcwe34bf-5fe4-41c3-3449-59fb4c25b230', api_url='https://datatorch.io')
+proj = api.project(loginOrId = 'r9128c45-fc1b-4333-a5d2-2ea4a35sd9c0')
 
-#Upload a file to DataTorch Storage
-testfile = open('uploadme.png','rb')
-api.upload_to_default_filesource(proj,testfile)
+# Our dataset is 100k images, so we will just upload the first 1000 and do it in batches
+first1000 = sorted(os.listdir())[0:1000]
+
+# Iterate through files and run the upload_to_default_filesource command for each of them
+import os
+for filename in first1000:
+  file = open(filename,'rb')
+  api.upload_to_default_filesource(proj,file)
 ```
 
+NOTE: Due to limitations in the cloud storage APIs, you are only able to manage 1000 files per folder in cloud storage. Thus, you may need to subdivide folders in your cloud storage so that each one has no more than 1000 files.
 
 ## Set up DataTorch
 
@@ -80,11 +83,16 @@ Use the upload_to_default_filesource() function to do so:
 # Import datatorch
 import datatorch
 
-# Assign API and Project to variables
-api = datatorch.api.ApiClient(api_key='ebawe75bf-5fe4-41c3-0049-59fb4c25b180')
-proj = api.project('54a5s11c-843e-0911-839d-395bg634g9g0')
+# Assign API and Project to variables and set the api_url parameter to the DataTorch URL
+api = datatorch.api.ApiClient(api_key='abcwe34bf-5fe4-41c3-3449-59fb4c25b230', api_url='https://datatorch.io')
+proj = api.project(loginOrId = 'r9128c45-fc1b-4333-a5d2-2ea4a35sd9c0')
 
-#Upload a file to DataTorch Storage
-testfile = open('uploadme.png','rb')
-api.upload_to_default_filesource(proj,testfile)
+# Our dataset is 100k images, so we will just upload the first 1000 and do it in batches
+first1000 = sorted(os.listdir())[0:1000]
+
+# Iterate through files and run the upload_to_default_filesource command for each of them
+import os
+for filename in first1000:
+  file = open(filename,'rb')
+  api.upload_to_default_filesource(proj,file)
 ```
