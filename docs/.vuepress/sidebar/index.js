@@ -72,7 +72,6 @@ module.exports = {
         'overview-automation',
         'tutorial-upload-data-python',
         'tutorial-graphql-api',
-        'tutorial-agents-pipelines',
         {
           title: 'Agents',
           collapsable: true,
