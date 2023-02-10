@@ -1,4 +1,6 @@
 const geometryjs = require('./geometry')
+const dev = require('./dev')
+
 
 module.exports = {
   guide: () => [
@@ -71,7 +73,6 @@ module.exports = {
         'tutorial-upload-data-python',
         'tutorial-graphql-api',
         'tutorial-agents-pipelines',
-        'tutorial-import-coco',
         {
           title: 'Agents',
           collapsable: true,
@@ -83,20 +84,8 @@ module.exports = {
           ]
         }
       ]
-    },
-
-    {
-      title: 'Python',
-      collapsable: false,
-      children: [
-        'python/overview-python',
-        'tutorial-upload-data-python',
-        'python/tutorial-upload-data-google-collab',
-        'python/cli',
-        'python/environment-variables',
-        'python/examples'
-      ]
     }
   ],
-  geometryjs: () => [...geometryjs]
+  geometryjs: () => [...geometryjs],
+  dev: () => [...dev]
 }

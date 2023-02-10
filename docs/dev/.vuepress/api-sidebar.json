@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Agents and Pipelines",
+    "children": [
+      "pipelines/overview-pipelines",
+      "pipelines/tutorial-agents-pipelines"
+    ]
+  },
+  {
+    "title": "DataTorch CLI",
+    "children": [
+      "cli/cli-get-started",
+      "cli/cli-reference",
+      "cli/environment-variables"
+    ]
+  },
+  {
+    "title": "Python Library",
+    "children": [
+      "python/overview-python",
+      "cli/environment-variables",
+      "python/examples",
+      "python/tutorial-upload-data-python",
+      "python/tutorial-upload-data-google-collab",
+      "python/tutorial-import-coco"
+    ]
+  }
+]

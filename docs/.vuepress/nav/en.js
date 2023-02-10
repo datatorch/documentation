@@ -4,6 +4,10 @@ module.exports = [
     link: '/'
   },
   {
+    text: 'Dev Docs',
+    link: '/dev/'
+  },
+  {
     text: 'Open-source',
     items: [
       { text: 'Node Storage', link: '/node/storage' },

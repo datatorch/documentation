@@ -1,6 +1,6 @@
 ---
 id: overview-python
-title: Introduction
+title: Overview
 ---
 
 <CenteredImage src="/python.png" width="25%" />

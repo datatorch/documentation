@@ -38,9 +38,10 @@ module.exports = context => ({
         editLinkText: 'Edit this page on GitHub',
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
-        sidebar: {
+        sidebar: {  
           '/js/geometry/': sidebars.geometryjs(),
-          '/': sidebars.guide()
+          '/dev/': sidebars.dev(),
+          '/': sidebars.guide(),
         }
       }
     }

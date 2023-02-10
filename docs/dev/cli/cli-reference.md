@@ -1,12 +1,11 @@
-# Command-line Interface
+---
+id: cli-reference
+title: CLI Reference
+---
 
-Login, create and upload files through the command line interface
+<CenteredImage src="/python.png" width="25%" />
 
-After install the python package `pip install datatorch` you should access to a
-new command **datatorch** (or **dt**).
-
-DataTorch CLI is built on top of the python package. Thus python >=3.6 must be
-installed in order for it to working.
+# CLI Reference
 
 ## Commands
 
