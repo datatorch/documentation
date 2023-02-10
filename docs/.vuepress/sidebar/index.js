@@ -70,7 +70,6 @@ module.exports = {
       collapsable: false,
       children: [
         'overview-automation',
-        'tutorial-upload-data-python',
         'tutorial-graphql-api',
         {
           title: 'Agents',
