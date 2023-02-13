@@ -19,9 +19,9 @@ Once it is created, it will take us to the Project Summary page.
 
 ## Optional: Upgrade Account
 
-DataTorch is free for personal use, and you are able to add up to 2 more collaborators for free to any private project.
+DataTorch is free for personal use, and public projects offer unlimited collaborators.
 
-However, if you wish to go beyond this limit, you will have to upgrade to a Pro account. Click your user icon in the upper right corner, then click "Upgrade" and follow the prompts.
+However, if you wish to collaborate on private projects, you will have to upgrade to a Pro account. Click your user icon in the upper right corner, then click "Upgrade" and follow the prompts.
 
 <img src="/figures/quickstart-project-setup/upgrade-account.png"
     width="250px"

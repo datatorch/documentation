@@ -40,7 +40,6 @@ module.exports = context => ({
         nav: require('./nav/en'),
         sidebar: {  
           '/js/geometry/': sidebars.geometryjs(),
-          '/dev/': sidebars.dev(),
           '/': sidebars.guide(),
         }
       }

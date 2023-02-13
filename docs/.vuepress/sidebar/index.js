@@ -1,5 +1,4 @@
 const geometryjs = require('./geometry')
-const dev = require('./dev')
 
 
 module.exports = {
@@ -84,6 +83,5 @@ module.exports = {
       ]
     }
   ],
-  geometryjs: () => [...geometryjs],
-  dev: () => [...dev]
+  geometryjs: () => [...geometryjs]
 }
