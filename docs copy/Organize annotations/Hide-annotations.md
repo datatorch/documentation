@@ -1,3 +1,0 @@
-# Hide annotations
-
-sdfsdfsdf

@@ -1,3 +1,0 @@
-# Supported file formats
-
-dsfsfsdfsdfs
