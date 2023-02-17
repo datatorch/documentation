@@ -3,7 +3,10 @@
     "title": "Agents and Pipelines",
     "children": [
       "pipelines/overview-pipelines",
-      "pipelines/tutorial-agents-pipelines"
+      "pipelines/tutorial-agents-pipelines",
+      "pipelines/pipelines",
+      "pipelines/actions",
+      "pipelines/variables"
     ]
   },
   {

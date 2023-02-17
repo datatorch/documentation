@@ -1,4 +1,4 @@
-# Actions
+# Action Creation
 
 Actions are individual tasks that you can combine to create jobs and customize
 your pipelines. You can create your own actions, or use and customize actions shared
@@ -12,6 +12,7 @@ Actions can run directly on a machine or in a Docker container. You can define
 an action's inputs, outputs, and environment variables.
 
 ## Types of Actions
+
 
 Currently DataTorch supports the following types of environments that can be used
 to run your action:
