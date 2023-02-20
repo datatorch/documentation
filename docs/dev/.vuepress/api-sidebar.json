@@ -6,7 +6,9 @@
       "pipelines/tutorial-agents-pipelines",
       "pipelines/pipelines",
       "pipelines/actions",
-      "pipelines/variables"
+      "pipelines/runs-main",
+      "pipelines/variables",
+      "pipelines/putting-it-all-together"
     ]
   },
   {

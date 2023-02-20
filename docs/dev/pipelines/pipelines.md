@@ -1,5 +1,7 @@
 # Pipeline Creation
 
+Pipelines are created by defining the pipeline structure in a YAML file. You can define the file in the DataTorch webclient, or you can create the file locally and test it using the CLI tool.
+
 ## Testing Locally
 
 If you have just finished creating a pipeline you can test it locally using the
@@ -20,7 +22,7 @@ YAML format before continuing.
 
 ### `name`
 
-**Required.** The name of your pipeline must me unique to the project. DataTorch
+**Required.** The name of your pipeline must be unique to the project. DataTorch
 displays the name of you pipeline under the `Pipelines` tab in your project.
 
 ### `jobs`
@@ -32,7 +34,55 @@ parallel by default.
 ???
 
 ### `triggers`
-???
+An object that describes what causes the pipeline to execute. Defaults to `manual`. Object can either be defined as `manual` (runs when user presses the button or calls using CLI), or `annotatorButton` (runs as a tool in the annotator ).
+
+<details>
+  <summary>manual</summary>
+
+  ```yaml
+  project: ${project}
+  name: My New Pipeline
+
+  triggers:
+    manual:
+      role: 'OWNER'
+      form: { JSON }
+  
+  jobs: ...
+  ```
+
+  `role` is an optional parameter that refers to the role name the user is required to have.
+
+  `form` is an optional parameter that defines a JSON schema.
+
+</details>
+
+<br />
+
+<details>
+  <summary>annotatorButton</summary>
+
+  ```yaml
+  project: ${project}
+  name: My New Pipeline
+
+  triggers:
+    annotatorButton:
+      name: "DEXTR"
+      icon: brain
+      flow: 4-points
+  
+  jobs: ...
+  ```
+
+  `name` **Required.** A unique id string for the annotator action.
+
+  `icon` **Required.** The icon to show on the annotator toolbar to trigger thre pipeline. Currently, the only available icon is `brain`.
+
+  `flow` **Required.** Defines annotator tool user behavior to be used as input to the pipeline.
+  Can be `2-points`,`4-points`, or `segmentation`.
+
+</details>
 
 ### `$schema`
 ???
@@ -102,6 +152,7 @@ is a reusable unit of code. This property can ether be a `string` or an
 </details>
 
 <br />
+
 <details>
   <summary>as object</summary>
 

@@ -1,7 +1,6 @@
 # Variables
 
-You can use expressions to programmatically set variables in workflow files and
-access contexts. An expression can be any combination of literal values,
+You can use expressions to programmatically access contexts or set variables in pipeline files and action-datatorch.yaml files. An expression can be any combination of literal values,
 references to a context, or functions. You can combine literals, context
 references, and functions using operators.
 
@@ -45,3 +44,91 @@ environments, jobs, and steps. Contexts use the following syntax.
 | action.directory       | string | Directory where the actions files are.                                                                                 |
 | variable               | object | Contains inputs and outputs from previous steps                                                                        |
 | variable.`<key>`       |  any   | Input and output from previous steps. All inputs and outputs are added to this variable object.                        |
+
+## Examples
+
+A Datatorch pipeline file using context for a custom annotator tool:
+
+```yaml
+# DataTorch Pipeline file
+# This is NOT an action-datatorch.yaml file
+
+name: DEXTR
+
+triggers:
+  # Adds a button to the annotator.
+  annotatorButton:
+    name: "DEXTR"
+    icon: brain
+    # Annotator will prompt the user for 4 points before triggering the pipeline
+    flow: 4-points
+
+jobs:
+  predict:
+    # Properties about the trigger event can be accessed at 'event' property
+    steps:
+      - name: Download File
+        action: datatorch/download-file@v1
+        inputs:
+          # Get the file id for the event that triggered this.
+          fileId: ${{ event.fileId }}
+
+      - name: Predict Segmentation
+        action: datatorch/dextr@latest
+        inputs:
+          # Download file path from the previous action.
+          imagePath: ${{ variable.path }}
+          # Get the 4 points the user clicked
+          points: ${{ event.flowData.points }}
+          # Annotation created by the four points. We will insert the
+          # segmentation into this annotation
+          annotationId: ${{ event.annotationId }}
+```
+
+An action-datatorch.yaml file in an action repository for inporting COCO annotations:
+
+```yaml
+# action-datatorch.yaml
+
+name: Import COCO
+description: Imports annotation in COCO format into a DataTorch Project. Files are are matched by name.
+inputs:
+  path:
+    type: string
+    required: true
+    description: Absolute path to the coco file
+  bbox:
+    type: boolean
+    default: false
+    description: Create a bbox annotation.
+  segmentation:
+    type: boolean
+    default: true
+    description: Create segmentation annotations.
+  project:
+    type: string
+    default: ${{ pipeline.projectId }}
+    description: >
+      Id or namespace and slug of the project to import the annotations into. This
+      will default to the flows project if not set.
+  maxIou:
+    type: float
+    default: 0.99
+    description: >
+      If an annotation exists on the file with an union over intersection of the
+      annotation about to be imported, the annotation will not be imported. Set
+      to 0 to disable. Disabling can significantly increase performance.
+  simplify:
+    type: float
+    default: 0.5
+    description: >
+      Simplification tolerance applied to coco segmentations before importing.
+      Set to 0 to disable. Disabling can significantly increase performance.
+  ignoreAnnotationsWithIds:
+    type: boolean
+    default: true
+    description: Annotations with the property 'datatorch_id' will be ignored.
+runs:
+  using: python
+  main: import_coco.py
+```

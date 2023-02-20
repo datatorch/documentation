@@ -19,7 +19,7 @@ pipelines you can automate your machine learning life cycle with a wide range of
 tools and services.
 
 Pipelines must have at least one __job__, and jobs contain a set of __steps__ that
-perform individual tasks. Steps can run commands or use an __action__. You can
+perform individual tasks. Steps can run commands or use __actions__. You can
 create your own actions or use actions shared by the DataTorch community and
 customize them as needed.
 
@@ -30,6 +30,16 @@ You need to configure pipelines using YAML or JSON syntax. You can also upload
 pipeline files using the DataTorch CLI tool. Once you've successfully created a
 pipeline file and triggered the pipeline, you will see the build logs, tests
 results, artifacts, and statuses for each step of your pipeline.
+
+## Actions
+Actions are individual tasks that are combined into jobs. You can create your own actions, or use and customize actions shared by the DataTorch community.
+
+You create actions by placing a special file called __action-datatorch.yaml__ in your repository. This file acts as the 'glue' between your pipeline file and 
+the code within your repository. You point the action-datatorch file to the rest
+of the code in your repo, which can do anythihng you like, including integrating with DataTorch's APIs or any publicly available third-party API.
+
+Actions can run directly on a machine or in a Docker container. You can define
+an action's inputs, outputs, and environment variables.
 
 <br />
 <Figure 
