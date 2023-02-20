@@ -25,6 +25,7 @@
       "python/overview-python",
       "cli/environment-variables",
       "python/examples",
+      "python/tutorial-setup-python",
       "python/tutorial-upload-data-python",
       "python/tutorial-upload-data-google-collab",
       "python/tutorial-import-coco"

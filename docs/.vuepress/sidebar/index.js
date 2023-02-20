@@ -64,25 +64,6 @@ module.exports = {
         'download-schema'
       ]
     },
-
-    {
-      title: 'Automation',
-      collapsable: false,
-      children: [
-        'overview-automation',
-        'tutorial-graphql-api',
-        {
-          title: 'Agents',
-          collapsable: true,
-          children: [
-            'agents/',
-            'agents/pipelines',
-            'agents/actions',
-            'agents/variables'
-          ]
-        }
-      ]
-    }
   ],
   geometryjs: () => [...geometryjs],
   dev: () => [...dev]
