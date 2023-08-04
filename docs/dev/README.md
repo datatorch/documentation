@@ -7,7 +7,7 @@ title: Overview
 
 # Developer Tools
 
-The DataTorch Python package includes deveral developer tools that allow you to extend and customize our software for your specific use cases. 
+The DataTorch Python package includes several developer tools that allow you to extend and customize our software for your specific use cases. 
 
 Simply install our Python package to get started.
 ```
