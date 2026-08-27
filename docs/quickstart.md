@@ -93,3 +93,7 @@ Once the schema is created, click on it, then click “Run Export” to tell it 
 
 Depending on the size of the schema, it might take some time to run, but the State indicator will change depending on the status. When it says “Success”, click on it and then click the “Download” button in the top right corner. Your COCO JSON file will download with all of the annotations included!
 
+
+## Next Steps
+
+Need data to experiment with? Browse the [public datasets on DataTorch](https://datatorch.io/explore): community projects across imagery types, free to download with an account.

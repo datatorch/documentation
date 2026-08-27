@@ -1,9 +1,9 @@
 ---
 id: keypoints-tutorial
-title: Annotate using Keypoints
+title: "Tutorial: Creating Keypoint Skeleton Labels"
 ---
 
-# How to Annotate using Keypoints tool in DataTorch
+# How to Create a COCO Keypoint Skeleton Label and Annotate with It
 
 Before we can use the Keypoints tool, we will need to create a keypoint-compatible label, by adding additional metadata to the label. This metadata is a JSON object that details the keypoint skeleton for each instance of that label, in COCO format.
 
@@ -40,7 +40,7 @@ In the Update Label modal, click the "More Options" dropdown and you will see th
 
 In this metadata section, we will create a JSON object that adds two additional fields to the label. These two fields are the ones required to describe keypoint annotations in COCO format: "keypoints" and "skeleton". 
 
-For more information, you can read in-depth about the COCO keypoint format [here](https://cocodataset.org/#format-data), but in simple terms:
+For more information, you can read in-depth about the COCO keypoint format [here](https://cocodataset.org/#format-data), or use our [COCO keypoint format reference](https://datatorch.io/resources/coco-keypoints) (the 17-keypoint order, skeleton pairs, and visibility flags on one page), but in simple terms:
 
 * The "keypoints" property is an array of strings that name each keypoint you want to define.
 
@@ -120,6 +120,8 @@ Here is a more complicated example that describes a human skeleton for pose esti
 
 :::
 
+This second example is the standard COCO 17-keypoint person schema, verbatim. If you are matching an existing dataset, the [COCO keypoint format reference](https://datatorch.io/resources/coco-keypoints) lists the exact keypoint order, the 1-based skeleton ids, and what the visibility flags mean.
+
 We will be using the four-point keypoint annotation for simplicity's sake. Add the metadata to the field and click "Update".
 
 ## Annotate with the Keypoint Tool
@@ -143,4 +145,10 @@ You should see the name of your first keypoint above your mouse cursor. Simply c
   max-width="450px"
   caption="What your keypoints should look like"
 />
+
+## Further Reading
+
+- [Keypoint annotation guide](https://datatorch.io/resources/keypoint-annotation-guide): the workflow and the classic mistakes (left/right flips, occlusion handling, order drift) that silently degrade keypoint datasets.
+- [COCO keypoint format reference](https://datatorch.io/resources/coco-keypoints): the 17 keypoints in order, the official skeleton pairs, and visibility flags.
+- [Keypoint and pose estimation datasets](https://datatorch.io/resources/keypoint-datasets): downloadable keypoint datasets hosted on DataTorch, plus the standard public benchmarks.
 
