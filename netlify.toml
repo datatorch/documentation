@@ -3,8 +3,8 @@
   publish = "docs/.vuepress/dist"
 
 [build.environment]
-  # node-releases (via browserslist) now requires Node >=18, but VuePress 1.x
-  # runs webpack 4, whose md4 hashing needs the OpenSSL legacy provider on
-  # Node >=17 — both settings are required together.
-  NODE_VERSION = "18"
+  # The regenerated lockfile resolves deps (brace-expansion@5) that require
+  # Node >=20, and VuePress 1.x runs webpack 4, whose md4 hashing needs the
+  # OpenSSL legacy provider on Node >=17 — both settings are required together.
+  NODE_VERSION = "20"
   NODE_OPTIONS = "--openssl-legacy-provider"
